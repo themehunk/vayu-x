@@ -1,2 +1,0 @@
-# vayu-x
-block themes

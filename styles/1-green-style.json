@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Green Style",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+               "color": "#FFF",
+               "name": "Bg Primary",
+               "slug": "bg-prim"
+            },
+            {
+              "color": "#F9F9F9",
+              "name": "Bg secondary",
+              "slug": "bg-sec"
+            },
+            {
+              "name": "Primary Color",
+              "color": "#111",
+              "slug": "prim-color"
+            },
+            {
+              "name": "Secondary Color",
+              "color": "#111",
+              "slug": "sec-color"
+            },
+            {
+              "color": "#4A6CF7",
+              "name": "Accent",
+              "slug": "accent"
+            }
+      ]
+    }
+  }
+}

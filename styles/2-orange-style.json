@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Orange Style",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#d54e0e",
+          "name": "Background",
+          "slug": "background"
+        },
+        {
+          "color": "#602b11",
+          "name": "Dark Background",
+          "slug": "dark-background"
+        },
+        {
+          "color": "#999",
+          "name": "Light Background",
+          "slug": "light-background"
+        },
+        {
+          "color": "#fff",
+          "name": "Heading Color",
+          "slug": "heading"
+        },
+        {
+          "slug": "bodytext",
+          "color": "#EBE9E9",
+          "name": "Body Text"
+        },
+        {
+          "slug": "dark-text-color",
+          "color": "#fff",
+          "name": "Button Border"
+        },
+        {
+          "color": "#fff",
+          "name": "Accent",
+          "slug": "accent"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "vayu-x",
+  "version": "1.0.0",
+  "description": "Vayu theme description",
+  "main": "register-editor-settings.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themehunk/blockline-pro.git"
+  },
+  "author": "themehunk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themehunk/blockline-pro/issues"
+  },
+  "homepage": "https://github.com/themehunk/blockline-pro#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.12.0",
+    "@wordpress/api-fetch": "^6.31.0",
+    "@wordpress/block-editor": "^12.0.0",
+    "@wordpress/components": "^23.9.0",
+    "@wordpress/compose": "^6.9.0",
+    "@wordpress/data": "^9.2.0",
+    "@wordpress/edit-post": "^7.9.0",
+    "@wordpress/edit-site": "^5.11.0",
+    "@wordpress/env": "^4.9.0",
+    "@wordpress/hooks": "^3.32.0",
+    "@wordpress/i18n": "^4.32.0",
+    "@wordpress/plugins": "^6.0.0"
+  }
+}

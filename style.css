@@ -1,0 +1,345 @@
+/*
+Theme Name: Vayu X
+Theme URI: https://themehunk.com/vayu/
+Author: ThemeHunk
+Author URI: https://www.themehunk.com
+Description: Vayu Xis a Fast & lightweight Block Based Full Site Editing WordPress Theme. With FSE, users can create custom templates for different pages or sections of the site, as well as use widgets and other design elements to control the appearance and layout of the site. We believe it will revolutionize the way you create and customize your WordPress site. With Vayu X you’ll have access to a range of pre-designed templates and custom block patterns, making it easy to create stunning pages and posts without any coding knowledge.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.3
+Requires PHP: 5.6
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+WordPress Available:  yes
+Requires License:     no
+Text Domain: vayu-x
+Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+ :root {
+	--wp--custom--core-button--spacing--padding--left: 40px;
+	--wp--custom--core-button--spacing--padding--right: 8px;
+	--wp--custom--core-button--spacing--padding--top: 8px;
+	--wp--custom--core-button--spacing--padding--bottom: 10px;
+	--wp--custom--core-button--color:  var(--wp--preset--color--white);
+	--wp--custom--core-button--color--background: var(--wp--preset--color--primary);
+	--wp--custom--core-button--color-hover:  var(--wp--preset--color--primary);
+	--wp--custom--core-button--color--background-hover: var(--wp--preset--color--secondary);
+	--wp--custom--core-button--box-sizing: border-box;
+	--wp--custom--core-button--word-break: border-box;
+	--wp--custom--core-button--text-align: center;
+	--wp--custom--core-button--border-radius--top-left: 0;
+	--wp--custom--core-button--border-radius--top-right: 0;
+	--wp--custom--core-button--border-radius--bottom-left: 0;
+	--wp--custom--core-button--border-radius--bottom-right: 0;
+	--wp--custom--core-button--typography--font-size: var(--wp--preset--font-size--small);
+	--wp--custom--core-button--typography--font-weight: 500;
+	--wp--custom--core-button--line-height: 1.7; }
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit; }
+  
+  html {
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased; }
+  
+  header p a,
+  footer p a {
+	text-decoration: none; }
+
+/*
+ * Text and navigation link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.editor-styles-wrapper .wp-site-blocks > * + *,
+.editor-styles-wrapper .wp-site-blocks > * + * + *,
+.wp-site-blocks > * + *,
+.wp-site-blocks > * + * + * {
+  margin: 0; }
+
+
+.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:focus {
+	text-decoration-style: solid;
+}
+
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+}
+
+/*
+ * Responsive menu container padding.
+ * This ensures the responsive container inherits the same
+ * spacing defined above. This behavior may be built into
+ * the Block Editor in the future.
+ */
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
+}
+
+/*image border style*/
+.wp-block-image.is-style-vayu-border img{
+    border: calc(3 * 1px) solid var(--wp--preset--color--accent);
+}
+/*tag style*/
+.taxonomy-post_tag.wp-block-post-terms a{ 
+padding:5px 10px;
+margin-right:10px;
+background:var(--wp--preset--color--accent);
+color:var(--wp--preset--color--black);
+border-radius:4px;
+font-size:var(--wp--preset--font-size--tiny);
+}
+
+
+.taxonomy-post_tag.wp-block-post-terms span{
+display:none;
+}
+
+/*
+ * Link Styles
+ */
+
+a:not(
+	.wp-block-search__button,
+	.wp-block-button__link
+) {
+	text-underline-offset: .1rem;
+}
+
+a:not(
+	.wp-block-search__button,
+	.wp-block-button__link
+):focus {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+/*  Sticky Header */
+.thunk-sticky-header{
+    position: fixed;
+    width:100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-animation: fadeOutUpBig .5s ease;
+    animation: fadeOutUpBig .5s ease;
+/*    box-shadow: 0 0 10px rgba(0,0,0,.08);  */
+    box-shadow: 0 2px 3px -1px rgb(68 65 33);
+    z-index: 999999;
+}
+/*  Transparent Header */
+header.thunk-transparent-header {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+.wp-block-column .lfb-heading{
+	display: none;
+}
+.wp-block-column .leadform-show-form textarea, 
+.wp-block-column .leadform-show-form input:not([type]), 
+.wp-block-column .leadform-show-form input[type="email"], 
+.wp-block-column .leadform-show-form input[type="number"], 
+.wp-block-column .leadform-show-form input[type="password"], 
+.wp-block-column .leadform-show-form input[type="tel"], 
+.wp-block-column .leadform-show-form input[type="url"], 
+.wp-block-column .leadform-show-form input[type="text"], 
+.wp-block-column .leadform-show-form input[type="number"]{
+	background-color: #161C30;
+	border-color: #161C30;
+	margin-bottom: 21px;
+}
+.wp-block-column .leadform-show-form .lf-field label{
+	display: none;
+}
+
+/*WooCommerce Style Css*/
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover,
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{
+	background-color: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+	background-color: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--background);
+	opacity: 0.9;
+}
+.woocommerce-page .quantity .input-text{
+	padding: 0.9rem 0;
+}
+.woocommerce .woocommerce-ordering select{
+	padding: 12px;
+}
+.woocommerce-error, .woocommerce-info, .woocommerce-message,
+.woocommerce-info a,
+.woocommerce span.onsale{
+	background-color: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--background);
+}
+.woocommerce-info{
+	border-top-color: var(--wp--preset--color--accent);;
+}
+.woocommerce-checkout #payment{
+	background: transparent;
+}
+.single-product.woocommerce div.product .woocommerce-tabs ul.tabs{
+	padding: 0;
+}
+.single-product.woocommerce div.product .woocommerce-tabs ul.tabs li{
+	margin-right: 9px;
+}
+.single-product.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
+	background-color: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--background);
+}
+/* Blog Page Style CSS */
+.wp-block-post-template{
+	display: flex;
+	flex-wrap: wrap;
+}
+.wp-block-post-template li{
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+.wp-block-post-template li:nth-of-type(3n+3){
+	margin-right: 0;
+}
+/* Single Blog Page Style Css*/
+.wp-block-post-author{
+    align-items: center;
+}
+.single-post .wp-block-post-featured-image img{
+    width: initial;
+    margin-right: 0 auto;
+    display: block;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+#move-to-top span.th-icon-angle-up:before{
+  display: none;
+}
+@media screen and (max-width: 600px){
+.wp-block-navigation__submenu-container{
+    padding-top: 0.7rem!important;
+    padding-bottom: 0.5rem!important;
+}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container{
+    gap: 9px!important;
+}
+}
+
+/*.vayu-transparent-header{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 27px;
+	z-index: 99999;
+}*/
+
+/* Blog Style */
+
+.th-article li{
+	width: 100%;
+}
+
+.components-button.is-pressed{
+	background: GREEN;
+}

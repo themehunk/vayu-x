@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "title": "Gray Maroon Style",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#EBF7FA",
+          "name": "Background",
+          "slug": "background"
+        },
+        {
+          "color": "#fff",
+          "name": "Dark Background",
+          "slug": "dark-background"
+        },
+        {
+          "color": "#999",
+          "name": "Light Background",
+          "slug": "light-background"
+        },
+        {
+          "color": "#111",
+          "name": "Heading Color",
+          "slug": "heading"
+        },
+        {
+          "slug": "bodytext",
+          "color": "#111",
+          "name": "Body Text"
+        },
+        {
+          "slug": "dark-text-color",
+          "color": "#CF102D",
+          "name": "Button Border"
+        },
+        {
+          "color": "#CF102D",
+          "name": "Accent",
+          "slug": "accent"
+        }
+      ]
+    }
+  }
+}
