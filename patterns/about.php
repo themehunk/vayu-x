@@ -26,9 +26,9 @@ return array(
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"layout":{"type":"default"}} -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Premium</p>
@@ -36,9 +36,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Reliable</p>
@@ -46,9 +46,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Premium</p>
@@ -56,9 +56,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Premium</p>
@@ -68,9 +68,9 @@ return array(
 
 <!-- wp:column {"layout":{"type":"default"}} -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Ionised Quality</p>
@@ -78,9 +78,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Durable</p>
@@ -88,9 +88,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Premium</p>
@@ -98,9 +98,9 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:image {"id":98,"width":21,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="http://localhost/wp2023/wp-content/uploads/2023/08/right-2.jpg" alt="" class="wp-image-98" style="width:21px" width="21"/></figure>
-<!-- /wp:image -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<p style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">||</p>
+<!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
 <p class="has-sec-color-color has-text-color">Highly Premium</p>
