@@ -17,7 +17,17 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:navigation {"ref":9,"textColor":"heading","overlayBackgroundColor":"heading","overlayTextColor":"background","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} /--></div>
+<div class="wp-block-group"><!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
+<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Blog","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Shop","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Home","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+<!-- wp:navigation-link {"label":"Products","url":"#","kind":"custom","isTopLevelLink":true} /-->
+<!-- /wp:navigation --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
