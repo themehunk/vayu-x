@@ -57,8 +57,7 @@
 		'blog',
 		'footer',
 		'primary-sidebar',
-		'404',
-		'woocommerce'
+		'404'
 	);
 
 	/**

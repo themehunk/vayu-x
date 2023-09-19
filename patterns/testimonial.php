@@ -1,14 +1,14 @@
 <?php
 /**
- * Testimonial 2 Section
+ * Testimonial Section
  * 
- * slug: testimonial2
- * title: Testimonial 2 Section
+ * slug: testimonial
+ * title: Testimonial Section
  * categories: vayu-x
  */
 
 return array(
-    'title'      =>__( 'Testimonial 2 Section', 'vayu-x' ),
+    'title'      =>__( 'Testimonial Section', 'vayu-x' ),
     'categories' => array( 'vayu-x' ),
     'content'    => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|60","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60"}}},"backgroundColor":"bg-sec","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide has-bg-sec-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60)"><!-- wp:heading {"textAlign":"center","textColor":"prim-color","fontSize":"wide"} -->
@@ -77,7 +77,7 @@ return array(
 
 <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","lineHeight":"0.6"}},"textColor":"prim-color"} -->
-<p class="has-prim-color-color has-text-color" style="font-style:normal;font-weight:600;line-height:0.6">Wamgnr Lasst</p>
+<p class="has-prim-color-color has-text-color" style="font-style:normal;font-weight:600;line-height:0.6">Staam Surre</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"0.8"}},"textColor":"sec-color"} -->
