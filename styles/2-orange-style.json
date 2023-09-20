@@ -6,41 +6,30 @@
     "color": {
       "palette": [
         {
-          "color": "#d54e0e",
-          "name": "Background",
-          "slug": "background"
-        },
-        {
-          "color": "#602b11",
-          "name": "Dark Background",
-          "slug": "dark-background"
-        },
-        {
-          "color": "#999",
-          "name": "Light Background",
-          "slug": "light-background"
-        },
-        {
-          "color": "#fff",
-          "name": "Heading Color",
-          "slug": "heading"
-        },
-        {
-          "slug": "bodytext",
-          "color": "#EBE9E9",
-          "name": "Body Text"
-        },
-        {
-          "slug": "dark-text-color",
-          "color": "#fff",
-          "name": "Button Border"
-        },
-        {
-          "color": "#fff",
-          "name": "Accent",
-          "slug": "accent"
-        }
-      ]
-    }
+               "color": "#d54e0e",
+               "name": "Bg Primary",
+               "slug": "bg-prim"
+            },
+            {
+              "color": "#602b11",
+              "name": "Bg secondary",
+              "slug": "bg-sec"
+            },
+            {
+              "name": "Primary Color",
+              "color": "#FFF",
+              "slug": "prim-color"
+            },
+            {
+              "name": "Secondary Color",
+              "color": "#C9C9C9",
+              "slug": "sec-color"
+            },
+            {
+              "color": "#FFF",
+              "name": "Accent",
+              "slug": "accent"
+            }
+      ]    }
   }
 }

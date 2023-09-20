@@ -23,6 +23,7 @@ Demo: https://themehunk.com/vayu/
 
 = 1.0.4 =
 * Fix: Option Panel Issue resolved.
+* Responsive Style Added.
 
 Version 1.0.3
 * Register_route error resolved.

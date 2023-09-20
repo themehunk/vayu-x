@@ -6,27 +6,27 @@
     "color": {
       "palette": [
         {
-               "color": "#FFF",
+               "color": "#1b521b",
                "name": "Bg Primary",
                "slug": "bg-prim"
             },
             {
-              "color": "#F9F9F9",
+              "color": "#0f380f",
               "name": "Bg secondary",
               "slug": "bg-sec"
             },
             {
               "name": "Primary Color",
-              "color": "#111",
+              "color": "#FFF",
               "slug": "prim-color"
             },
             {
               "name": "Secondary Color",
-              "color": "#111",
+              "color": "#C9C9C9",
               "slug": "sec-color"
             },
             {
-              "color": "#4A6CF7",
+              "color": "#51db24",
               "name": "Accent",
               "slug": "accent"
             }
