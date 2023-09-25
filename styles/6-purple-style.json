@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Greens Style",
+  "title": "Blue Style",
   "version": 2,
   "settings": {
     "color": {
@@ -56,12 +56,12 @@
       ],
       "palette": [
         {
-               "color": "#6A426A",
+               "color": "#87B7FF",
                "name": "Bg Primary",
                "slug": "bg-prim"
             },
             {
-              "color": "#493049",
+              "color": "#2570E1",
               "name": "Bg secondary",
               "slug": "bg-sec"
             },
@@ -72,11 +72,11 @@
             },
             {
               "name": "Secondary Color",
-              "color": "#C9C9C9",
+              "color": "#E5E5E5",
               "slug": "sec-color"
             },
             {
-              "color": "#817392",
+              "color": "#3B6AC6",
               "name": "Accent",
               "slug": "accent"
             }
