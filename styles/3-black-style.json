@@ -4,42 +4,66 @@
   "version": 2,
   "settings": {
     "color": {
+      "duotone": [
+        {
+          "colors": [
+            "#111",
+            "#FFF"
+          ],
+          "name": "Bg prim & Prim Color",
+          "slug": "bg-prim-and-prim-color"
+        },
+        {
+          "colors": [
+            "#181818",
+            "#C9C9C9"
+          ],
+          "name": "Bg-sec and Secondary Color",
+          "slug": "bg-sec-and-sec-color"
+        },
+        {
+          "colors": [
+            "#51db24",
+            "#FFF"
+          ],
+          "name": "Accent & Prim-color",
+          "slug": "accent-and-prim-color"
+        },
+        {
+          "colors": [
+            "#51db24",
+            "#C9C9C9"
+          ],
+          "name": "Accent & Secondary Color",
+          "slug": "accent-and-sec-color"
+        }
+      ],
       "palette": [
         {
-          "color": "#111",
-          "name": "Background",
-          "slug": "background"
-        },
-        {
-          "color": "#140f0f",
-          "name": "Dark Background",
-          "slug": "dark-background"
-        },
-        {
-          "color": "#999",
-          "name": "Light Background",
-          "slug": "light-background"
-        },
-        {
-          "color": "#fff",
-          "name": "Heading Color",
-          "slug": "heading"
-        },
-        {
-          "slug": "bodytext",
-          "color": "#EBE9E9",
-          "name": "Body Text"
-        },
-        {
-          "slug": "dark-text-color",
-          "color": "#74C225",
-          "name": "Button Border"
-        },
-        {
-          "color": "#92E93B",
-          "name": "Accent",
-          "slug": "accent"
-        }
+              "color": "#111",
+              "name": "Bg Primary",
+              "slug": "bg-prim"
+            },
+            {
+              "color": "#181818",
+              "name": "Bg secondary",
+              "slug": "bg-sec"
+            },
+            {
+              "name": "Primary Color",
+              "color": "#FFF",
+              "slug": "prim-color"
+            },
+            {
+              "name": "Secondary Color",
+              "color": "#C9C9C9",
+              "slug": "sec-color"
+            },
+            {
+              "color": "#51db24",
+              "name": "Accent",
+              "slug": "accent"
+            }
       ]
     }
   }

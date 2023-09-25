@@ -37,51 +37,35 @@
 			"duotone": [
 				{
 					"colors": [
-						"#000000",
-						"#ffffff"
+						"#EBF3FF",
+						"#111111"
 					],
-					"name": "light-text-color and bg-prim",
-					"slug": "light-text-color-and-bg-prim"
+					"name": "Bg prim & Prim Color",
+					"slug": "bg-prim-and-prim-color"
 				},
 				{
 					"colors": [
-						"#000000",
-						"#ffe2c7"
+						"#FFF",
+						"#838181"
 					],
-					"name": "light-text-color and bg-sec",
-					"slug": "light-text-color-and-bg-sec"
+					"name": "Bg-sec and Secondary Color",
+					"slug": "bg-sec-and-sec-color"
 				},
 				{
 					"colors": [
-						"#000000",
-						"#f6f6f6"
+						"#3B6AC6",
+						"#111111"
 					],
-					"name": "light-text-color and tertiary",
-					"slug": "light-text-color-and-tertiary"
+					"name": "Accent & Prim-color",
+					"slug": "accent-and-prim-color"
 				},
 				{
 					"colors": [
-						"#1a4548",
-						"#ffffff"
+						"#3B6AC6",
+						"#838181"
 					],
-					"name": "Primary and bg-prim",
-					"slug": "primary-and-bg-prim"
-				},
-				{
-					"colors": [
-						"#1a4548",
-						"#ffe2c7"
-					],
-					"name": "Primary and secondary",
-					"slug": "primary-and-secondary"
-				},
-				{
-					"colors": [
-						"#1a4548",
-						"#f6f6f6"
-					],
-					"name": "Primary and tertiary",
-					"slug": "primary-and-tertiary"
+					"name": "Accent & Secondary Color",
+					"slug": "accent-and-sec-color"
 				}
 			],
 			"gradients": [
@@ -128,27 +112,27 @@
 			],
 			"palette": [
 				{
-		           "color": "#111",
+		           "color": "#EBF3FF",
 		           "name": "Bg Primary",
 		           "slug": "bg-prim"
        			},
 		        {
-		          "color": "#181818",
+		          "color": "#FFF",
 		          "name": "Bg secondary",
 		          "slug": "bg-sec"
 		        },
 		        {
 		          "name": "Primary Color",
-		          "color": "#FFF",
+		          "color": "#111111",
 		          "slug": "prim-color"
 		        },
 		        {
 		          "name": "Secondary Color",
-		          "color": "#C9C9C9",
+		          "color": "#838181",
 		          "slug": "sec-color"
 		        },
 		        {
-		          "color": "#51db24",
+		          "color": "#3B6AC6",
 		          "name": "Accent",
 		          "slug": "accent"
 		        }
