@@ -4,6 +4,40 @@
   "version": 2,
   "settings": {
     "color": {
+          "duotone": [
+        {
+          "colors": [
+            "#EEEEEE",
+            "#111"
+          ],
+          "name": "Bg prim & Prim Color",
+          "slug": "bg-prim-and-prim-color"
+        },
+        {
+          "colors": [
+            "#FFFFFF",
+            "#838181"
+          ],
+          "name": "Bg-sec and Secondary Color",
+          "slug": "bg-sec-and-sec-color"
+        },
+        {
+          "colors": [
+            "#111",
+            "#111"
+          ],
+          "name": "Accent & Prim-color",
+          "slug": "accent-and-prim-color"
+        },
+        {
+          "colors": [
+            "#111",
+            "#838181"
+          ],
+          "name": "Accent & Secondary Color",
+          "slug": "accent-and-sec-color"
+        }
+      ],
       "palette": [
         {
                "color": "#EEEEEE",
