@@ -91,8 +91,8 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","backgroundColor":"bg-prim","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull has-bg-prim-background-color has-background"><!-- wp:paragraph -->
-<p>Copyright  : 2023 Design &amp; developed with Vayu X</p>
+<div class="wp-block-group alignfull has-bg-prim-background-color has-background"><!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Copyright  : 2023 Design &amp; developed with Vayu X</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->',
 );

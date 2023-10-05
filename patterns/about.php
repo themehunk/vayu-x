@@ -1,14 +1,14 @@
 <?php
 /**
- * About 2 Section
+ * About Section
  * 
  * slug: about
- * title: About 2 Section
+ * title: About Section
  * categories: vayu-x
  */
 
 return array(
-    'title'      =>__( 'About 2 Section', 'vayu-x' ),
+    'title'      =>__( 'About Section', 'vayu-x' ),
     'categories' => array( 'vayu-x' ),
     'content'    => '<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|60","bottom":"var:preset|spacing|80","left":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|50"}},"backgroundColor":"bg-sec","layout":{"inherit":true,"type":"constrained"}} -->
 <main class="wp-block-group alignfull has-bg-sec-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--60)"><!-- wp:columns {"align":"wide","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
@@ -111,8 +111,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":237,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'about-.png" alt="" class="wp-image-237"/></figure>
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":8,"sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|dark-grayscale"}}} -->
+<figure class="wp-block-image size-full"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'about-.png" alt="" class="wp-image-8"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -131,8 +131,8 @@ return array(
 <div class="wp-block-columns alignwide" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"style":{"spacing":{"blockGap":"0"}}} -->
 <div class="wp-block-column"><!-- wp:columns {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
 <div class="wp-block-columns" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":239,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'about.png" alt="" class="wp-image-239"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"id":9,"sizeSlug":"full","linkDestination":"none","style":{"color":{"duotone":"var:preset|duotone|dark-grayscale"}}} -->
+<figure class="wp-block-image size-full"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'about.png" alt="" class="wp-image-9"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

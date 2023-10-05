@@ -4,54 +4,38 @@
   "version": 2,
   "settings": {
     "color": {
-      "duotone": [
+       "duotone": [
         {
           "colors": [
-            "#000000",
-            "#ffffff"
+            "#E0F3AB",
+            "#000000"
           ],
-          "name": "light-text-color and bg-prim",
-          "slug": "light-text-color-and-bg-prim"
+          "name": "Bg prim & Prim Color",
+          "slug": "bg-prim-and-prim-color"
         },
         {
           "colors": [
-            "#000000",
-            "#ffe2c7"
+            "#C4D853",
+            "#000000"
           ],
-          "name": "light-text-color and bg-sec",
-          "slug": "light-text-color-and-bg-sec"
+          "name": "Bg-sec and Secondary Color",
+          "slug": "bg-sec-and-sec-color"
         },
         {
           "colors": [
-            "#000000",
-            "#f6f6f6"
+            "#4D630C",
+            "#000000"
           ],
-          "name": "light-text-color and tertiary",
-          "slug": "light-text-color-and-tertiary"
+          "name": "Accent & Prim-color",
+          "slug": "accent-and-prim-color"
         },
         {
           "colors": [
-            "#1a4548",
-            "#ffffff"
+            "#4D630C",
+            "#000000"
           ],
-          "name": "Primary and bg-prim",
-          "slug": "primary-and-bg-prim"
-        },
-        {
-          "colors": [
-            "#1a4548",
-            "#ffe2c7"
-          ],
-          "name": "Primary and secondary",
-          "slug": "primary-and-secondary"
-        },
-        {
-          "colors": [
-            "#1a4548",
-            "#f6f6f6"
-          ],
-          "name": "Primary and tertiary",
-          "slug": "primary-and-tertiary"
+          "name": "Accent & Secondary Color",
+          "slug": "accent-and-sec-color"
         }
       ],
       "palette": [
