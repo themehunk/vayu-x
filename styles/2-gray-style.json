@@ -1,21 +1,21 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "title": "Gray Style",
+  "title": "Light Blue Style",
   "version": 2,
   "settings": {
     "color": {
-          "duotone": [
+         "duotone": [
         {
           "colors": [
-            "#EEEEEE",
-            "#111"
+            "#EBF3FF",
+            "#111111"
           ],
           "name": "Bg prim & Prim Color",
           "slug": "bg-prim-and-prim-color"
         },
         {
           "colors": [
-            "#FFFFFF",
+            "#FFF",
             "#838181"
           ],
           "name": "Bg-sec and Secondary Color",
@@ -23,35 +23,35 @@
         },
         {
           "colors": [
-            "#111",
-            "#111"
+            "#3B6AC6",
+            "#111111"
           ],
           "name": "Accent & Prim-color",
           "slug": "accent-and-prim-color"
         },
         {
           "colors": [
-            "#111",
+            "#3B6AC6",
             "#838181"
           ],
           "name": "Accent & Secondary Color",
           "slug": "accent-and-sec-color"
         }
       ],
-      "palette": [
+     "palette": [
         {
-               "color": "#EEEEEE",
+               "color": "#EBF3FF",
                "name": "Bg Primary",
                "slug": "bg-prim"
             },
             {
-              "color": "#FFFFFF",
+              "color": "#FFF",
               "name": "Bg secondary",
               "slug": "bg-sec"
             },
             {
               "name": "Primary Color",
-              "color": "#111",
+              "color": "#111111",
               "slug": "prim-color"
             },
             {
@@ -60,7 +60,7 @@
               "slug": "sec-color"
             },
             {
-              "color": "#111",
+              "color": "#3B6AC6",
               "name": "Accent",
               "slug": "accent"
             }
