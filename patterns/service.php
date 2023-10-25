@@ -24,8 +24,8 @@ return array(
 <div class="wp-block-column"><!-- wp:group {"textColor":"light-text-color","layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group has-light-text-color-color has-text-color"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":64,"width":54,"sizeSlug":"full","linkDestination":"none","style":{"border":{"width":"0px","style":"none"}}} -->
-<figure class="wp-block-image size-full is-resized has-custom-border"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'one.png" alt="" class="wp-image-64" style="border-style:none;border-width:0px;width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":64,"width":72,"sizeSlug":"full","linkDestination":"none","style":{"border":{"width":"0px","style":"none"}}} -->
+<figure class="wp-block-image size-full is-resized has-custom-border"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'one.png" alt="" class="wp-image-64" style="border-style:none;border-width:0px;width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
@@ -42,8 +42,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":65,"width":54,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'two.png" alt="" class="wp-image-65" style="width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":65,"width":72,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'two.png" alt="" class="wp-image-65" style="width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
@@ -60,8 +60,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":66,"width":54,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'three.png" alt="" class="wp-image-66" style="width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":66,"width":72,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'three.png" alt="" class="wp-image-66" style="width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
@@ -80,8 +80,8 @@ return array(
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":67,"width":54,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'four.png" alt="" class="wp-image-67" style="width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":67,"width":72,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'four.png" alt="" class="wp-image-67" style="width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
@@ -98,8 +98,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":68,"width":54,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'five.png" alt="" class="wp-image-68" style="width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":68,"width":72,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'five.png" alt="" class="wp-image-68" style="width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
@@ -116,8 +116,8 @@ return array(
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|60"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":69,"width":54,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'six.png" alt="" class="wp-image-69" style="width:54px" width="54"/></figure>
+<div class="wp-block-column" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:image {"id":69,"width":72,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="' . esc_url( VAYU_X_URL . 'assets/images/').'six.png" alt="" class="wp-image-69" style="width:72px" width="72"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"14px"} -->
