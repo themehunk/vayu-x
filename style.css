@@ -4,9 +4,9 @@ Theme URI: https://themehunk.com/vayu/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Vayu Xis a Fast & lightweight Block Based Full Site Editing WordPress Theme. With FSE, users can create custom templates for different pages or sections of the site, as well as use widgets and other design elements to control the appearance and layout of the site. We believe it will revolutionize the way you create and customize your WordPress site. With Vayu X you’ll have access to a range of pre-designed templates and custom block patterns, making it easy to create stunning pages and posts without any coding knowledge.
-Version: 1.0.2
+Version: 1.0.3
 Requires at least: 6.0
-Tested up to: 6.3.1
+Tested up to: 6.3.2
 Requires PHP: 5.6
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -215,12 +215,12 @@ header.thunk-transparent-header {
 .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover,
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current{
 	background-color: var(--wp--preset--color--accent);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--btnclr);
 	font-size: var(--wp--preset--font-size--medium);
 }
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
 	background-color: var(--wp--preset--color--accent);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--btnclr);
 	opacity: 0.9;
 }
 .woocommerce-page .quantity .input-text{
@@ -233,7 +233,7 @@ header.thunk-transparent-header {
 .woocommerce-info a,
 .woocommerce span.onsale{
 	background-color: var(--wp--preset--color--accent);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--btnclr);
 }
 .woocommerce-info{
 	border-top-color: var(--wp--preset--color--accent);;
@@ -249,7 +249,7 @@ header.thunk-transparent-header {
 }
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
 	background-color: var(--wp--preset--color--accent);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--btnclr);
 }
 /* Blog Page Style CSS */
 .wp-block-post-template{
