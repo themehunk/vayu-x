@@ -3,10 +3,10 @@ Theme Name: Vayu X
 Theme URI: https://themehunk.com/vayu/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
-Description: Vayu Xis a Fast & lightweight Block Based Full Site Editing WordPress Theme. With FSE, users can create custom templates for different pages or sections of the site, as well as use widgets and other design elements to control the appearance and layout of the site. We believe it will revolutionize the way you create and customize your WordPress site. With Vayu X you’ll have access to a range of pre-designed templates and custom block patterns, making it easy to create stunning pages and posts without any coding knowledge.
-Version: 1.0.3
+Description: Vayu X is a Fast & lightweight Block Based Full Site Editing WordPress Theme. With FSE, users can create custom templates for different pages or sections of the site, as well as use widgets and other design elements to control the appearance and layout of the site. We believe it will revolutionize the way you create and customize your WordPress site. With Vayu X you’ll have access to a range of pre-designed templates and custom block patterns, making it easy to create stunning pages and posts without any coding knowledge.
+Version: 1.0.4
 Requires at least: 6.0
-Tested up to: 6.3.2
+Tested up to: 6.4
 Requires PHP: 5.6
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -97,7 +97,7 @@ a:active {
 .wp-block-search__button,
 .wp-block-file .wp-block-file__button {
 	background-color: var(--wp--preset--color--primary);
-	border-radius: 0;
+	border-radius: 4px;
 	border: none;
 	color: var(--wp--preset--color--background);
 	font-size: var(--wp--preset--font-size--medium);
@@ -235,6 +235,23 @@ header.thunk-transparent-header {
 	background-color: var(--wp--preset--color--accent);
 	color: var(--wp--preset--color--btnclr);
 }
+.woocommerce span.onsale{
+	min-height: initial;
+	min-width: initial;
+	padding: 5px 12px;
+	border-radius: 4px;
+	line-height: normal;
+}
+.single-product .flex-viewport{
+	margin-bottom: 18px;
+}
+.woocommerce .woocommerce-breadcrumb,
+.woocommerce .woocommerce-breadcrumb a{
+	color: var(--wp--preset--color--prim-color);
+}
+.wp-block-woocommerce-related-products h2{
+	margin-bottom: 0.83em;
+}
 .woocommerce-info{
 	border-top-color: var(--wp--preset--color--accent);;
 }
@@ -267,6 +284,43 @@ header.thunk-transparent-header {
     width: initial;
     margin-right: 0 auto;
     display: block;
+}
+.wp-element-button, .wp-block-button__link{
+	border-radius: 4px;
+}
+/*.vayu-transparent-header{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 27px;
+	z-index: 99999;
+}*/
+
+/* Blog Style */
+
+.th-article li{
+	width: 100%;
+}
+
+.components-button.is-pressed{
+	background: GREEN;
+}
+.wp-block-search__button{
+	color: #FFF;
+}
+.has-accent-background-color{
+	color: #FFF;
+}
+/********* Woocommerce default settings starts ***************/
+.woocommerce-checkout h3{
+font-weight: normal;
+}
+/********* Woocommerce default settings Ends ***************/
+.wp-element-button, .wp-block-button__link{
+	background-color: var(--wp--preset--color--accent);
+}
+.checkout_coupon .form-row-first br{
+	display: none;
 }
 @-webkit-keyframes spin {
     0% {
@@ -311,6 +365,26 @@ header.thunk-transparent-header {
 #move-to-top span.th-icon-angle-up:before{
   display: none;
 }
+.woocommerce-account .woocommerce-MyAccount-navigation{
+	background: var(--wp--preset--color--bg-sec);
+	padding: 18px 27px;
+	margin-bottom: 21px;
+	border-radius: 4px;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation a{
+	color: var(--wp--preset--color--sec-color);
+}
+.woocommerce-account .woocommerce-MyAccount-navigation ul{
+	margin: 0;
+}
+.woocommerce-account .woocommerce-MyAccount-navigation li a:hover{
+	text-decoration: none;
+}
+.wc-block-components-notice-banner__content a{
+	display: block;
+	text-align-last: center;
+	padding: 12px;
+}
 @media screen and (max-width: 600px){
 .wp-block-navigation__submenu-container{
     padding-top: 0.7rem!important;
@@ -321,26 +395,3 @@ header.thunk-transparent-header {
 }
 }
 
-/*.vayu-transparent-header{
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 27px;
-	z-index: 99999;
-}*/
-
-/* Blog Style */
-
-.th-article li{
-	width: 100%;
-}
-
-.components-button.is-pressed{
-	background: GREEN;
-}
-.wp-block-search__button{
-	color: #FFF;
-}
-.has-accent-background-color{
-	color: #FFF;
-}

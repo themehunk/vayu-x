@@ -464,6 +464,12 @@
 			"background": "var(--wp--preset--color--bg-prim)",
 			"text": "var(--wp--preset--color--prim-color)"
 		},
+		 "spacing": {
+      "padding": {
+				"right": "18px",
+				"left": "18px"
+			}
+    },
 		"elements": {
 			"h1": {
 				"typography": {
