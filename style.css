@@ -385,6 +385,25 @@ font-weight: normal;
 	text-align-last: center;
 	padding: 12px;
 }
+.th-product-compare-btn-wrap a{
+	border-radius: 4px;
+	padding: 10px!important;
+	font-size: 11px!important;
+}
+.woocommerce-shop .th-product-compare-btn-wrap{
+	text-align: center;
+}
+.th-product-compare-btn-wrap a:hover,
+.th-product-compare-btn-wrap a:focus{
+	text-decoration: none;
+}
+.woocommerce-form-track-order p input{
+	height: 45px;
+	padding: 12px;
+}
+.woocommerce-form-track-order p button{
+	font-size: 12px!important;
+}
 @media screen and (max-width: 600px){
 .wp-block-navigation__submenu-container{
     padding-top: 0.7rem!important;
@@ -394,4 +413,3 @@ font-weight: normal;
     gap: 9px!important;
 }
 }
-
