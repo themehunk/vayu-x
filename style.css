@@ -454,7 +454,9 @@ border-bottom: 2px solid var(--wp--preset--color--accent);
     width: 100%;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active
- a:before {
+ a:before,
+ .woocommerce div.product .woocommerce-tabs ul.tabs li:hover
+ a:before{
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
