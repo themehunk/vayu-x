@@ -493,3 +493,9 @@ box-shadow: none;
     gap: 9px!important;
 }
 }
+.taiowc-cart-model-wrap .cart-heading h4{
+	margin: 0;
+}
+.taiowc-cart-close{
+	cursor: pointer;
+}
