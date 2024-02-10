@@ -2,8 +2,8 @@
 Contributors: themehunk
 Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
 Requires at least: 6.0
-Tested up to: 6.4.2
-Stable tag: 1.0.7
+Tested up to: 6.4.3
+Stable tag: 1.0.8
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -20,6 +20,9 @@ Demo: https://themehunk.com/vayu/
 
 
 == Changelog ==
+
+Version 1.0.8
+* Padding issue in full width template resolved.
 
 Version 1.0.7
 * Whislisht Page Style improved.
