@@ -25,111 +25,37 @@ function PluginData() {
     return <div>Loading...</div>;
   }
 
-   // plugin and theme install
-//    function handleInstallClick() {
-//    // Make an AJAX request
-//    var xhr = new XMLHttpRequest();
-//    xhr.open('POST', wpapi.ajaxurl, true); // ajaxurl is a global variable in WordPress that contains the URL to admin-ajax.php
-//    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-//    xhr.onreadystatechange = function() {
-//        if (xhr.readyState === 4) {
-//            if (xhr.status === 200) {
-//                var response = JSON.parse(xhr.responseText);
-//                if (response.success) {
-//                    alert('Plugin installed and activated successfully!');
-//                } else {
-//                    alert('Error: ' + response.message);
-//                }
-//            } else {
-//                alert('Error: ' + xhr.statusText);
-//            }
-//        }
-//    };
+// plugin install
+// Function to handle the install button click event
+async function handleInstallClick() {
+  try {
+      // Prepare data to send in the AJAX request
+      const data = new URLSearchParams();
+      data.append('action', 'install_plugin_ajax_callback'); // Replace with the actual AJAX action hook
+      data.append('plugin_slug', 'vayu-blocks'); // Replace 'v-blocks' with the actual plugin slug
 
-//    // Prepare data to send
-//    var data = new FormData();
-//    data.append('action', 'install_plugin'); // Replace 'install_plugin' with the actual AJAX action hook
-//    data.append('nonce', wpapi.nonce); // Replace 'wpapi.nonce' with the actual nonce value generated in your PHP code
-//    // Add any additional data as needed
+      // Make the AJAX request using fetch
+      const response = await fetch(`${ajaxUrl}?action=install_plugin_ajax_callback`, {
+          method: 'POST',
+          body: data
+      });
 
-//    // Send the AJAX request
-//    xhr.send(data);
-// }
-// alert(wpapi.homeUrl2);
-// function handleInstallClick() {
-//   // Prepare data to send
-//   const data = {
-//       // Add any additional data as needed
-//   };
+      // Parse the JSON response
+      const responseData = await response.json();
 
-//   const Url = `${wpapi.homeUrl2}/wp-json/vayu-x-plugin/v1/install-plugin`;
-  
-//   // Make a POST request to the REST API endpoint
-//   fetch(Url, {
-//       method: 'POST',
-//       headers: {
-//           'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify(data),
-//   })
-//   .then(response => {
-//       if (!response.ok) {
-//           throw new Error('Network response was not ok');
-//       }
-//       return response.json();
-//   })
-//   .then(data => {
-//       if (data.success) {
-//           alert('Plugin installed and activated successfully!');
-//       } else {
-//           alert('Error: ' + data.message);
-//       }
-//   })
-//   .catch(error => {
-//       console.error('There was a problem with the fetch operation:', error);
-//       alert('Error: ' + error.message);
-//   });
-
-  
-// }
-
-// plugin and theme install
-
-const process = async () =>{
-
-  // const params =  {
-  //   templateType: props.templateData.free_paid,
-  //   plugin: props.templateData.plugin,
-  //   allPlugins:wpPlugins,
-  //   builder:props.templateData.builder_theme,
-  //   themeSlug:getThemeName(),
-  //   proThemePlugin:getPluginName('free'),
-  //   tmplFreePro:getPluginName()
-  // }
-  
-  const Url = `${wpapi.homeUrl2}/wp-json/vayu-x-plugin/v1/install-plugin`;
-
-    try {
-        await axios.post(wpapi.homeUrl2+'/wp-json/vayu-x-plugin/v1/install-plugin', {
-            params: {
-              plugin: 'vayu-blocks',
-              wpUrl:'https://downloads.wordpress.org/',
-              thUrl:'https://themehunk.com/wp/data/'                    }
-          })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          })
-          .finally(function () {
-            // always executed
-          });
-
-    } catch (error) {
-        console.error('Error fetching data:', error);
+      // Check if the request was successful
+      if (response.ok) {
+          // Handle success
+          alert('Plugin installed and activated successfully!');
+      } else {
+          // Handle error
+          alert('Error: ' + responseData.message);
       }
+  } catch (error) {
+      console.error('Error:', error);
+  }
 }
+
 
 
 
@@ -285,8 +211,8 @@ const process = async () =>{
             <div className="title-plugin">
                 <h4>Vayu Blocks</h4>
             </div>
-            <button className="custom-button" onClick={process}>
-              Install & Activate
+            <button className="custom-button" onClick={handleInstallClick}>
+             {__('Install & Activate','vayu-blocks')} 
             </button>
             </div>
           </div>
