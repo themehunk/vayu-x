@@ -125,3 +125,6 @@ function vayu_x_enqueue_editor_scripts(){
 }
 
 add_action( 'enqueue_block_editor_assets','vayu_x_enqueue_editor_scripts' );
+
+//theme option panel
+require get_template_directory() . '/theme-option/theme-option.php';
