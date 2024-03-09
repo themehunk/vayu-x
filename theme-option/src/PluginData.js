@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import {useState, useEffect} from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import axios from 'axios';
+import PluginButton from './PluginButton';
 
 function PluginData() {
 
@@ -205,15 +205,13 @@ async function handleInstallClick() {
       <PluginList data={data}></PluginList>
       <div className="th-option-row content-box custom-install">
              <div className="th-col">
-              <img src="r"/>
+             <img src={`${wpapi.blocklineUri}/theme-option/assets/img/icon.gif`}/>
             </div>
             <div className="th-col">
             <div className="title-plugin">
                 <h4>Vayu Blocks</h4>
             </div>
-            <button className="custom-button" onClick={handleInstallClick}>
-             {__('Install & Activate','vayu-blocks')} 
-            </button>
+           <PluginButton pluginSlug={"vayu-blocks"}></PluginButton>
             </div>
           </div>
       </div>

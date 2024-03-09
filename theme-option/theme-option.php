@@ -34,6 +34,8 @@ class Vayu_theme_option{
   }
    
    function blockline_enqueue_scripts($hook_suffix) {
+$get_plugin_status_nonce = wp_create_nonce('get_plugin_status_nonce');
+$install_and_activate_plugin_nonce = wp_create_nonce('install_and_activate_plugin_nonce');
 
     if($hook_suffix == 'appearance_page_blockline_thunk_started') {
 
@@ -52,6 +54,8 @@ class Vayu_theme_option{
           'themeName' => wp_get_theme()->get( 'Name' ),
           'themeVersion' =>  wp_get_theme()->get( 'Version' ),
           'homeUrl2' => get_home_url(),
+          'getPluginStatusNonce' => $get_plugin_status_nonce,
+          'installAndActivatePluginNonce' => $install_and_activate_plugin_nonce,
         )
     );
 
@@ -74,4 +78,4 @@ $obj = new Vayu_theme_option();
 //theme option panel
 require get_template_directory() . '/theme-option/plugin-data.php';
 
-require get_template_directory() . '/theme-option/custom-download.php';
+require get_template_directory() . '/theme-option/api-function/custom-download.php';
