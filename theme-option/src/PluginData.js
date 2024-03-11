@@ -10,7 +10,7 @@ function PluginData() {
 
   const ajaxUrl = wpapi.ajaxurl;
 
-  const Url = `${homeUrl}/wp-json/wp/v1/blockline`;
+  const Url = `${homeUrl}/wp-json/wp/v1/vayu`;
 
   useEffect(() => {
     fetch(`${Url}`)
@@ -205,7 +205,7 @@ async function handleInstallClick() {
       <PluginList data={data}></PluginList>
       <div className="th-option-row content-box custom-install">
              <div className="th-col">
-             <img src={`${wpapi.blocklineUri}/theme-option/assets/img/icon.gif`}/>
+             <img src={`${wpapi.vayuUri}/theme-option/assets/img/icon.gif`}/>
             </div>
             <div className="th-col">
             <div className="title-plugin">

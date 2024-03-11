@@ -4,7 +4,7 @@
   include_once(ABSPATH . 'wp-admin/includes/plugin.php');
   }
 
-  function blockline_pro_free_check($key, $free_init, $pro_init){
+  function vayu_x_pro_free_check($key, $free_init, $pro_init){
 
   $status = array();
 
@@ -68,7 +68,7 @@
 }
 
 add_action( 'rest_api_init', function () {
-    register_rest_route( 'wp/v1', 'blockline', array(
+    register_rest_route( 'wp/v1', 'vayu', array(
         'methods' => 'GET',
         'callback' => 'vayu_theme_option_endpoint_callback',
         'permission_callback' => '__return_true',
@@ -85,7 +85,7 @@ function vayu_theme_option_endpoint_callback() {
 
     foreach ($data as $key => $value) {
 
-      $plugin_status = blockline_pro_free_check($key, $value->init, $value->proInit);
+      $plugin_status = vayu_x_pro_free_check($key, $value->init, $value->proInit);
 
       $response_data[] = array(
             $key => array(
