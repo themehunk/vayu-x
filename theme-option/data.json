@@ -1,11 +1,12 @@
 {
-  "unlimited-blocks": {
-    "name": "Unlimited blocks For Gutenberg",
-    "imgUrl": "https://ps.w.org/unlimited-blocks/assets/icon-128x128.png",
-    "link": "",
-    "init": "unlimited-blocks",
-    "proInit":""
+  "vayu-blocks": {
+    "name": "Vayu Blocks",
+    "imgUrl": "https://ps.w.org/vayu-blocks/assets/icon-128x128.png",
+    "link": "https://themehunk.com/vayu-blocks/",
+    "init": "vayu-blocks",
+    "proInit":" "
   },
+  
   "lead-form-builder": {
     "name": "Lead Form Builder",
     "imgUrl": "https://ps.w.org/lead-form-builder/assets/icon-128x128.png",
@@ -49,12 +50,5 @@
     "link": "https://themehunk.com/th-variation-swatches/",
     "init": "th-variation-swatches",
     "proInit":"th-variation-swatches-pro/th-variation-swatches-pro"
-  },
-  "vayu-blocks": {
-    "name": "Vayu Blocks",
-    "imgUrl": "https://ps.w.org/vayu-blocks/assets/icon-128x128.png",
-    "link": "https://themehunk.com/vayu-blocks/",
-    "init": "vayu-blocks",
-    "proInit":""
   }
 }

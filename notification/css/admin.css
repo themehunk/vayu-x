@@ -18,9 +18,17 @@
     font-size: 16px;
     border-radius: 4px;
     border-color: #6C1BC3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
 }
 .wp-core-ui .vayu-wrapper-banner .button{
     margin-right: 21px;
+}
+.wp-core-ui .vayu-wrapper-banner .button:focus{
+    outline: 0;
+    box-shadow: 0 0 0 1px #6C1BC3;
 }
 .wp-core-ui .vayu-wrapper-banner .button.learn-more{
     background: #FFF;
@@ -40,3 +48,40 @@
     margin: 29px 0;
     line-height: 27px;
 }
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  #install-vayu-blocks .loader {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+    display: none;
+  }

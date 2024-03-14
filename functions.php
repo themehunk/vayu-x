@@ -129,24 +129,4 @@ add_action( 'enqueue_block_editor_assets','vayu_x_enqueue_editor_scripts' );
 //theme option panel
 require get_template_directory() . '/theme-option/theme-option.php';
 
-function vayu_x_admin_script() {
-    // Enqueue the JavaScript file
-    wp_enqueue_script( 'vayu-x-notifyjs', get_template_directory_uri() . '/notification/js/notify.js', array( 'jquery' ), '1.0', true );
-
-    // Pass AJAX URL to the script
-    wp_localize_script( 'vayu-x-notifyjs', 'vayuAjax', array(
-        'ajaxUrl' => admin_url( 'admin-ajax.php' ),
-        'security' => wp_create_nonce( 'vayunonce' ), // Create nonce for security
-    ) );
-}
-add_action( 'admin_enqueue_scripts', 'vayu_x_admin_script' );
-
-// Enqueue custom admin CSS
-function vayu_x_admin_css() {
-    wp_enqueue_style('vayu-x-admin-css', get_template_directory_uri() . '/notification/css/admin.css', array(), '1.0.0', 'all');
-}
-add_action('admin_enqueue_scripts', 'vayu_x_admin_css');
-
-
-
 require get_template_directory() . '/notification/notify.php';
