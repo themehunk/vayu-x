@@ -99,21 +99,7 @@ add_action( 'after_setup_theme', 'vayu_x_custom_menu' );
 
 function vayu_x_enqueue_editor_scripts(){
 
-	$asset_file = require_once VAYU_X_DIR .'build/registerEditorSettings.asset.php';
-
-
-	// wp_enqueue_script(
-	// 	'vayu-editor-settings',
-	// 	VAYU_X_URL . 'build/registerEditorSettings.js',
-	// 	array_merge(
-	// 		$asset_file['dependencies']
-	// 	),
-	// 	'1.0.0',
-	// 	true
-	// );
-
-	wp_enqueue_style('vayu-x-editor-style', VAYU_X_URL . 'block-editor.css', array(), '');
-   
+	wp_enqueue_style('vayu-x-editor-style', VAYU_X_URL . 'block-editor.css', array(), ''); 
 
 }
 
