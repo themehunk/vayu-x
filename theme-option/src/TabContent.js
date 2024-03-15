@@ -29,12 +29,12 @@ const TabContent = (props) => {
           { __( 'Recommended Plugin', 'vayu-x' )}
         </button>
 
-        <button
+        {/* <button
           className={`tab recommended ${activeTab === 'demoImport' ? 'active' : ''}`}
           onClick={() => handleTabClick('demoImport')}
         >
           { __( 'Demo Import', 'vayu-x' )}
-        </button>
+        </button> */}
        
         <button
           className={`tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`}

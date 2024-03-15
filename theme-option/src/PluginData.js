@@ -22,7 +22,7 @@ function PluginData() {
   }, []);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div>{ __('Loading...','vayu-x') }</div>;
   }
 
 // plugin install

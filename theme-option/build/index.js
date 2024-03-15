@@ -269,7 +269,7 @@ function PluginData() {
     });
   }, []);
   if (!data) {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "Loading...");
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Loading...', 'vayu-x'));
   }
 
   // plugin install
@@ -454,7 +454,11 @@ const SidebarContent = () => {
     className: "sidebar-option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Vayu Blocks', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ignite your imagination with Vayu Blocks — An innovative tool for creative minds. The Vayu Blocks is an add-on plugin For Gutenberg Block Editor. Quickstart the Gutenberg editor with Powerful and elegant blocks to design stunning websites.', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Vayu Blocks', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ignite your imagination with Vayu Blocks — An innovative tool for creative minds. The Vayu Blocks is an add-on plugin For Gutenberg Block Editor. Quickstart the Gutenberg editor with Powerful and elegant blocks to design stunning websites.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "https://themehunk.com/vayu-blocks/",
+    target: "_blank",
+    className: "content-link button"
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Learn More', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Leave us a review', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('We would love to hear your feedback.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://www.trustpilot.com/review/themehunk.com",
@@ -514,9 +518,6 @@ const TabContent = props => {
     className: `tab recommended ${activeTab === 'recommended' ? 'active' : ''}`,
     onClick: () => handleTabClick('recommended')
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Recommended Plugin', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: `tab recommended ${activeTab === 'demoImport' ? 'active' : ''}`,
-    onClick: () => handleTabClick('demoImport')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Demo Import', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`,
     onClick: () => handleTabClick('freevspro')
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Vs Pro', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
@@ -582,7 +583,7 @@ const WelcomeContent = () => {
     className: "option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box-full"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Welcome to Vayu X', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Welcome to Vayu X. Here is a short video to look over its features and uses. ', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
     width: "320",
     height: "240",
     controls: true

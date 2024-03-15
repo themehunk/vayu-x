@@ -277,3 +277,9 @@ max-width:100%;
         border-color: #4570e3;
         color: #ffffff;
     }
+    .welcome-tab h2{
+        line-height: 29px;
+    }
+    .content-box a{
+      color: #4570e3;
+    }
