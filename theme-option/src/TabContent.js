@@ -19,34 +19,34 @@ const TabContent = (props) => {
           className={`tab welcome ${activeTab === 'welcome' ? 'active' : ''}`}
           onClick={() => handleTabClick('welcome')}
         >
-         { __( 'Welcome', 'blockline' )}
+         { __( 'Welcome', 'vayu-x' )}
           
         </button>
         <button
           className={`tab recommended ${activeTab === 'recommended' ? 'active' : ''}`}
           onClick={() => handleTabClick('recommended')}
         >
-          { __( 'Recommended Plugin', 'blockline' )}
+          { __( 'Recommended Plugin', 'vayu-x' )}
         </button>
 
         <button
           className={`tab recommended ${activeTab === 'demoImport' ? 'active' : ''}`}
           onClick={() => handleTabClick('demoImport')}
         >
-          { __( 'Demo Import', 'blockline' )}
+          { __( 'Demo Import', 'vayu-x' )}
         </button>
        
         <button
           className={`tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`}
           onClick={() => handleTabClick('freevspro')}
         >
-          { __( 'Free Vs Pro', 'blockline' )}
+          { __( 'Free Vs Pro', 'vayu-x' )}
         </button>
         <button
           className={`tab help ${activeTab === 'help' ? 'active' : ''}`}
           onClick={() => handleTabClick('help')}
         >
-          { __( 'Help', 'blockline' )}
+          { __( 'Help', 'vayu-x' )}
         </button>
       </div>
       <div className="tab-content">

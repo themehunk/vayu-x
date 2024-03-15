@@ -1,6 +1,6 @@
 import {useState, useEffect} from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
-import PluginButton from './PluginButton';
+// import PluginButton from './PluginButton';
 
 function PluginData() {
 
@@ -154,7 +154,7 @@ async function handleInstallClick() {
 
       if(item[items].status == 'pro-installed'){
         
-        nameTxt = <h4>{item[items].name}<span>{__( 'Pro', 'blockline' )}</span></h4>
+        nameTxt = <h4>{item[items].name}<span>{__( 'Pro', 'vayu-x' )}</span></h4>
         proDiv      ='';
         pSlug       = item[items].init.split("/").shift();
         pInit       = item[items].init;
@@ -164,7 +164,7 @@ async function handleInstallClick() {
         }else{
         
           nameTxt = <h4>{item[items].name}</h4>
-          proDiv  = <a className="doc-link th-go-pro" href={item[items].link}> {__( 'Go Pro', 'blockline' )}</a>;
+          proDiv  = <a className="doc-link th-go-pro" href={item[items].link}> {__( 'Go Pro', 'vayu-x' )}</a>;
           pSlug   = item[items].slug;
           pInit   = item[items].init;
           pStatus = item[items].free;
@@ -203,7 +203,8 @@ async function handleInstallClick() {
       <div className="recommended-option-wrap">
       <div className="th-option-2-col">
       <PluginList data={data}></PluginList>
-      <div className="th-option-row content-box custom-install">
+      
+      {/* <div className="th-option-row content-box custom-install">
              <div className="th-col">
              <img src={`${wpapi.vayuUri}/theme-option/assets/img/icon.gif`}/>
             </div>
@@ -211,9 +212,10 @@ async function handleInstallClick() {
             <div className="title-plugin">
                 <h4>Vayu Blocks</h4>
             </div>
-           <PluginButton pluginSlug={"vayu-blocks"}></PluginButton>
+           <PluginButton pluginSlug={"vayu-blocks"}></PluginButton> 
             </div>
-          </div>
+        </div> */}
+
       </div>
       </div>
 

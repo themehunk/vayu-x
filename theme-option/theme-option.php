@@ -27,9 +27,9 @@ class Vayu_theme_option{
 
     function blockline_register_settings_menu() {
 
-    $menu_title = sprintf( esc_html__( '%s Options', 'blockline' ), apply_filters( 'thsm_page_title', __( 'Vayu X', 'vayu-x' ) ) );
+    $menu_title = sprintf( esc_html__( '%s Options', 'vayu-x' ), apply_filters( 'thsm_page_title', __( 'Vayu X', 'vayu-x' ) ) );
 
-    add_theme_page(esc_html__('Blockline', 'blockline'), $menu_title, 'edit_theme_options', 'blockline_thunk_started', array($this, 'vayu_x_settings_page'));   
+    add_theme_page(esc_html__('Blockline', 'vayu-x'), $menu_title, 'edit_theme_options', 'blockline_thunk_started', array($this, 'vayu_x_settings_page'));   
    
   }
    
@@ -78,4 +78,5 @@ $obj = new Vayu_theme_option();
 //theme option panel
 require get_template_directory() . '/theme-option/plugin-data.php';
 
-require get_template_directory() . '/theme-option/api-function/custom-download.php';
+// Below line is to include rest api function created for cutom pligin to be add in the list
+// require get_template_directory() . '/theme-option/api-function/custom-download.php';

@@ -18,12 +18,12 @@ const OptionHeader = () => {
            <div className="th-option-top-hdr">
               <div className="th-col2">
                     <div className="th-option-heading">
-                       <h2>{sprintf(__( 'Welcome To %s Theme', 'blockline' ), wpapi.themeName)}</h2>
-                       <p>{wpapi.themeName} {__( 'Multipurpose WordPress Full Site Editing Theme', 'blockline' )}</p>
+                       <h2>{sprintf(__( 'Welcome To %s Theme', 'vayu-x' ), wpapi.themeName)}</h2>
+                       <p>{wpapi.themeName} {__( 'Multipurpose WordPress Full Site Editing Theme', 'vayu-x' )}</p>
                     </div>
                     <div className="th-option-detail">
-                        <p className="th-version">{__( 'Version ', 'blockline' )} {wpapi.themeVersion} </p>
-                        <span>{__( 'Free', 'blockline' )}</span>
+                        <p className="th-version">{__( 'Version ', 'vayu-x' )} {wpapi.themeVersion} </p>
+                        <span>{__( 'Free', 'vayu-x' )}</span>
                     </div>
               </div>
             </div>

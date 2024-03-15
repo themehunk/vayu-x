@@ -97,13 +97,6 @@ add_action( 'after_setup_theme', 'vayu_x_custom_menu' );
 // this is commented line
 // require get_template_directory() . '/inc/admin_menu/index.php';
 
-
-
-
-
-
-
-
 function vayu_x_enqueue_editor_scripts(){
 
 	$asset_file = require_once VAYU_X_DIR .'build/registerEditorSettings.asset.php';

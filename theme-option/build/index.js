@@ -103,29 +103,29 @@ const HelpContent = () => {
     className: "option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Contact Support', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('If you need any help you can contact to our support team', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Contact Support', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('If you need any help you can contact to our support team', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://themehunk.com/contact-us/",
     target: "_blank",
     className: "content-link "
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Need help...', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Need help...', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Documentation', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Our WordPress Theme is well documented, you can go with our documentation and learn to customize Big Store.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Documentation', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Our WordPress Theme is well documented, you can go with our documentation and learn to customize Big Store.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://themehunk.com/docs/",
     target: "_blank",
     className: "content-link "
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Go to Doc', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Go to Doc', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create a child theme', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before modifying theme core files. You should create child theme to make those changes update proof. Please follow this link to create child theme.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create a child theme', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Before modifying theme core files. You should create child theme to make those changes update proof. Please follow this link to create child theme.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://themehunk.com/child-theme/",
     target: "_blank",
     className: "content-link "
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create Child Theme', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create Child Theme', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join Group', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join the community of friendly ThemeHunk users. Get connected, share opinion, ask questions and help each other !', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join Group', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join the community of friendly ThemeHunk users. Get connected, share opinion, ask questions and help each other !', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://linktr.ee/themehunk",
     target: "_blank",
     className: "content-link button"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join Our Social Group', 'blockline')))));
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Join Our Social Group', 'vayu-x')))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (HelpContent);
 
@@ -194,11 +194,11 @@ const OptionHeader = () => {
     className: "th-col2"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "th-option-heading"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, sprintf((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Welcome To %s Theme', 'blockline'), wpapi.themeName)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, wpapi.themeName, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Multipurpose WordPress Full Site Editing Theme', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, sprintf((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Welcome To %s Theme', 'vayu-x'), wpapi.themeName)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, wpapi.themeName, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Multipurpose WordPress Full Site Editing Theme', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "th-option-detail"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "th-version"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Version ', 'blockline'), " ", wpapi.themeVersion, " "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Free', 'blockline'))))))));
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Version ', 'vayu-x'), " ", wpapi.themeVersion, " "), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Free', 'vayu-x'))))))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (OptionHeader);
 
@@ -248,94 +248,6 @@ const OptionSidebar = () => {
 
 /***/ }),
 
-/***/ "./src/PluginButton.js":
-/*!*****************************!*\
-  !*** ./src/PluginButton.js ***!
-  \*****************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function PluginButton({
-  pluginSlug
-}) {
-  const [buttonText, setButtonText] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)('Loading');
-  const [buttonDisabled, setButtonDisabled] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
-  const [customClass, setcustomClass] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)('Loading');
-  const getPluginStatusNonce = wpapi.getPluginStatusNonce;
-  const installAndActivatePluginNonce = wpapi.installAndActivatePluginNonce;
-  const ajaxUrl = wpapi.ajaxurl;
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    // Fetch plugin status
-    const fetchPluginStatus = async () => {
-      const response = await fetch(`${ajaxUrl}?action=get_plugin_status_callback`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams({
-          plugin_slug: pluginSlug,
-          security: getPluginStatusNonce
-        }).toString()
-      });
-      if (response.ok) {
-        const data = await response.json();
-        if (data.success) {
-          const status = data.data.status;
-          if (status === 'not_installed') {
-            setButtonText('Install');
-            setcustomClass('install-now');
-            setButtonDisabled(false);
-          } else if (status === 'installed_not_activated') {
-            setButtonText('Active Now');
-            setcustomClass('active-now');
-            setButtonDisabled(false);
-          } else if (status === 'installed_and_activated') {
-            setButtonText('Activated');
-            setcustomClass('activated');
-            setButtonDisabled(true);
-          }
-        }
-      }
-    };
-    fetchPluginStatus();
-  }, [pluginSlug]);
-  const handleButtonClick = async () => {
-    console.log(installAndActivatePluginNonce);
-    const response = await fetch(`${ajaxUrl}?action=install_and_activate_plugin_callback`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: new URLSearchParams({
-        plugin_slug: pluginSlug,
-        security: installAndActivatePluginNonce
-      }).toString()
-    });
-    if (response.ok) {
-      const data = await response.json();
-      if (data.success) {
-        setButtonText('Activated');
-        setButtonDisabled(true);
-        alert('Plugin installed and activated successfully!');
-      } else {
-        alert('Error: ' + data.message);
-      }
-    }
-  };
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: `custom-button button ${customClass}`,
-    onClick: handleButtonClick,
-    disabled: buttonDisabled
-  }, buttonText);
-}
-/* harmony default export */ __webpack_exports__["default"] = (PluginButton);
-
-/***/ }),
-
 /***/ "./src/PluginData.js":
 /*!***************************!*\
   !*** ./src/PluginData.js ***!
@@ -347,10 +259,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _PluginButton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PluginButton */ "./src/PluginButton.js");
 
 
 
+// import PluginButton from './PluginButton';
 
 function PluginData() {
   const [data, setData] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
@@ -455,7 +367,7 @@ function PluginData() {
     const renderData = data.map(item => {
       const renderDataa = Object.keys(item).map(items => {
         if (item[items].status == 'pro-installed') {
-          nameTxt = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, item[items].name, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Pro', 'blockline')));
+          nameTxt = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, item[items].name, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Pro', 'vayu-x')));
           proDiv = '';
           pSlug = item[items].init.split("/").shift();
           pInit = item[items].init;
@@ -466,7 +378,7 @@ function PluginData() {
           proDiv = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
             className: "doc-link th-go-pro",
             href: item[items].link
-          }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Go Pro', 'blockline'));
+          }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Go Pro', 'vayu-x'));
           pSlug = item[items].slug;
           pInit = item[items].init;
           pStatus = item[items].free;
@@ -500,19 +412,7 @@ function PluginData() {
     className: "th-option-2-col"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PluginList, {
     data: data
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "th-option-row content-box custom-install"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "th-col"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    src: `${wpapi.vayuUri}/theme-option/assets/img/icon.gif`
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "th-col"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "title-plugin"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, "Vayu Blocks")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_PluginButton__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    pluginSlug: "vayu-blocks"
-  })))));
+  })));
 }
 /* harmony default export */ __webpack_exports__["default"] = (PluginData);
 
@@ -560,34 +460,23 @@ const SidebarContent = () => {
     className: "sidebar-option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", wpapi.themeName, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)(' Premium Theme', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('You’re using the free version of the Vayu X Theme with limited features and functionality. You can upgrade to Blockline Pro Theme for Advanced features, Custom Sections, and more useful options to customize your website easily.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Vayu Blocks', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Ignite your imagination with Vayu Blocks — An innovative tool for creative minds. The Vayu Blocks is an add-on plugin For Gutenberg Block Editor. Quickstart the Gutenberg editor with Powerful and elegant blocks to design stunning websites.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://themehunk.com/templates/blockline-pro/",
     target: "_blank",
     className: "content-link button"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upgrade To Pro', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upgrade To Pro', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Why Upgrade?', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Upgrading to Blockline Premium you will unlock dozen of unique features that will take your website to the next level. See the Comparison table for more details.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "https://themehunk.com/templates/blockline-pro/",
-    target: "_blank",
-    className: "content-link button"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Pro Demo', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Leave us a review', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('We would love to hear your feedback.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "https://wordpress.org/support/theme/blockline/reviews/?filter=5",
-    className: "content-link"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Submit review', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Video Tutorials', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Want a guide? We have video tutorials to walk you through getting started.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "https://www.youtube.com/watch?v=EbH5CRujnYQ",
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Leave us a review', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('We would love to hear your feedback.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "https://www.trustpilot.com/review/themehunk.com",
     target: "_blank",
     className: "content-link"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Watch Videos', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Submit Review', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Support', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Have a question, we are happy to help! Get in touch with our support team.', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Support', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Have a question, we are happy to help! Get in touch with our support team.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: "https://themehunk.com/contact-us/",
     target: "_blank",
     className: "content-link"
-  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Submit a Ticket', 'blockline')))));
+  }, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Submit a Ticket', 'vayu-x')))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (SidebarContent);
 
@@ -631,19 +520,19 @@ const TabContent = props => {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab welcome ${activeTab === 'welcome' ? 'active' : ''}`,
     onClick: () => handleTabClick('welcome')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Welcome', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Welcome', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab recommended ${activeTab === 'recommended' ? 'active' : ''}`,
     onClick: () => handleTabClick('recommended')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Recommended Plugin', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Recommended Plugin', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab recommended ${activeTab === 'demoImport' ? 'active' : ''}`,
     onClick: () => handleTabClick('demoImport')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Demo Import', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Demo Import', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`,
     onClick: () => handleTabClick('freevspro')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Vs Pro', 'blockline')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Vs Pro', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab help ${activeTab === 'help' ? 'active' : ''}`,
     onClick: () => handleTabClick('help')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Help', 'blockline'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Help', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "tab-content"
   }, activeTab === 'welcome' && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "welcome-tab"
