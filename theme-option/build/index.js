@@ -632,7 +632,7 @@ class Vayu_X__option_panel extends _wordpress_element__WEBPACK_IMPORTED_MODULE_0
   }
 }
 document.addEventListener("DOMContentLoaded", function (event) {
-  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Vayu_X__option_panel, null), document.getElementById('blockline-theme-setting-page'));
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Vayu_X__option_panel, null), document.getElementById('vayu-x-theme-setting-page'));
 });
 
 /***/ }),
