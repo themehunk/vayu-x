@@ -8,7 +8,7 @@ const SidebarContent = () => {
                <div className="content-box">
                 <h3> { __( 'Vayu Blocks', 'vayu-x' )}</h3>
                 <p>{__( 'Ignite your imagination with Vayu Blocks — An innovative tool for creative minds. The Vayu Blocks is an add-on plugin For Gutenberg Block Editor. Quickstart the Gutenberg editor with Powerful and elegant blocks to design stunning websites.', 'vayu-x' )}</p>
-                <a href="https://themehunk.com/templates/blockline-pro/" target="_blank" className="content-link button"> {__( 'Upgrade To Pro', 'vayu-x' )}</a>
+                {/* <a href="https://themehunk.com/templates/blockline-pro/" target="_blank" className="content-link button"> {__( 'Upgrade To Pro', 'vayu-x' )}</a> */}
                </div>
                <hr></hr>
                <div className="content-box">
