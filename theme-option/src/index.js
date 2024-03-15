@@ -3,7 +3,7 @@ import { __ } from '@wordpress/i18n';
 import OptionPanel from './OptionPanel';
 import './style.css';
 
-class Blockline_option_panel extends Component {
+class Vayu_X__option_panel extends Component {
     render() {
         return (
             <Fragment>
@@ -16,7 +16,7 @@ class Blockline_option_panel extends Component {
 
 document.addEventListener( "DOMContentLoaded", function(event) {
     render(
-        <Blockline_option_panel />,
+        <Vayu_X__option_panel />,
         document.getElementById( 'blockline-theme-setting-page' )
         )
     }

@@ -20,7 +20,7 @@ class Vayu_theme_option{
 
     function __construct(){
 
-    add_action('admin_enqueue_scripts', array($this, 'blockline_enqueue_scripts'));
+    add_action('admin_enqueue_scripts', array($this, 'vayu_x_enqueue_scripts'));
     add_action('admin_menu', array($this, 'blockline_register_settings_menu'),99);
       
     }
@@ -29,11 +29,13 @@ class Vayu_theme_option{
 
     $menu_title = sprintf( esc_html__( '%s Options', 'blockline' ), apply_filters( 'thsm_page_title', __( 'Vayu X', 'vayu-x' ) ) );
 
-    add_theme_page(esc_html__('Blockline', 'blockline'), $menu_title, 'edit_theme_options', 'blockline_thunk_started', array($this, 'blockline_settings_page'));   
+    add_theme_page(esc_html__('Blockline', 'blockline'), $menu_title, 'edit_theme_options', 'blockline_thunk_started', array($this, 'vayu_x_settings_page'));   
    
   }
    
-   function blockline_enqueue_scripts($hook_suffix) {
+   function vayu_x_enqueue_scripts($hook_suffix) {
+$get_plugin_status_nonce = wp_create_nonce('get_plugin_status_nonce');
+$install_and_activate_plugin_nonce = wp_create_nonce('install_and_activate_plugin_nonce');
 
     if($hook_suffix == 'appearance_page_blockline_thunk_started') {
 
@@ -48,10 +50,12 @@ class Vayu_theme_option{
           'homeUrl' => get_home_url(),
           'ajaxurl' => admin_url( 'admin-ajax.php' ),
           'wpnonce' => wp_create_nonce( "ajaxnonce" ),
-          'blocklineUri' => trailingslashit(get_template_directory_uri()),
+          'vayuUri' => trailingslashit(get_template_directory_uri()),
           'themeName' => wp_get_theme()->get( 'Name' ),
           'themeVersion' =>  wp_get_theme()->get( 'Version' ),
           'homeUrl2' => get_home_url(),
+          'getPluginStatusNonce' => $get_plugin_status_nonce,
+          'installAndActivatePluginNonce' => $install_and_activate_plugin_nonce,
         )
     );
 
@@ -59,7 +63,7 @@ class Vayu_theme_option{
     
    }
 
-   function blockline_settings_page() {
+   function vayu_x_settings_page() {
     ?>
         <div id="blockline-theme-setting-page" class="blockline-theme-setting-page">
         </div>
@@ -74,4 +78,4 @@ $obj = new Vayu_theme_option();
 //theme option panel
 require get_template_directory() . '/theme-option/plugin-data.php';
 
-require get_template_directory() . '/theme-option/custom-download.php';
+require get_template_directory() . '/theme-option/api-function/custom-download.php';

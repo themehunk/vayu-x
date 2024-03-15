@@ -9,7 +9,7 @@ const OptionHeader = () => {
               <div className="th-logo-img">
                         <a target="_blank" href="https://themehunk.com/" > 
                         <span className="logo-image">
-                         <img className="logo-img" src={`${wpapi.blocklineUri}/theme-option/assets/img/logo-themehunk.png`}></img>
+                         <img className="logo-img" src={`${wpapi.vayuUri}/theme-option/assets/img/logo-themehunk.png`}></img>
                          </span>
                         </a>
               </div> 
