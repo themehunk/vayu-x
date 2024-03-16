@@ -132,7 +132,7 @@ if (! is_plugin_active($plugin_init) && $instl == 'install-now') {
 	);
 
   if ( ! current_user_can( 'install_plugins' ) ) {
-		$status['errorMessage'] = __( 'Sorry, you are not allowed to install plugins on this site.','blockline' );
+		$status['errorMessage'] = __( 'Sorry, you are not allowed to install plugins on this site.','vayu-x' );
 		wp_send_json_error( $status );
 	}
 
@@ -197,7 +197,7 @@ if (is_wp_error($activate)) {
   wp_send_json_success(
     array(
       'success' => true,
-      'message' => __('Plugin Successfully Activated', 'blockline'),
+      'message' => __('Plugin Successfully Activated', 'vayu-x'),
     )
   );
 
@@ -217,7 +217,7 @@ if (is_wp_error($activate)) {
     wp_send_json_success(
       array(
         'success' => true,
-        'message' => __('Plugin Successfully Activated', 'blockline'),
+        'message' => __('Plugin Successfully Activated', 'vayu-x'),
       )
     );
 

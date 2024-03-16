@@ -74,13 +74,13 @@ max-width:100%;
     font-weight: 700;
 
 }
-.appearance_page_blockline_thunk_started #wpcontent{
+.appearance_page_vayu_x__thunk_started #wpcontent{
     padding:0;
     background:#fff;
     height: initial;
     }
     
-    #blockline-theme-setting-page{
+    #vayu-x-theme-setting-page{
     padding:1rem;
     }
     
@@ -276,4 +276,10 @@ max-width:100%;
         background: #4570e3;
         border-color: #4570e3;
         color: #ffffff;
+    }
+    .welcome-tab h2{
+        line-height: 29px;
+    }
+    .content-box a{
+      color: #4570e3;
     }

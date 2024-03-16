@@ -8,7 +8,7 @@ class Vayu_theme_option{
      * @since 1.0
      * @var array $menu_page_title
      */
-    static public $menu_page_title = 'blockline';
+    static public $menu_page_title = 'vayu x';
 
     /**
      * Current Slug
@@ -21,15 +21,15 @@ class Vayu_theme_option{
     function __construct(){
 
     add_action('admin_enqueue_scripts', array($this, 'vayu_x_enqueue_scripts'));
-    add_action('admin_menu', array($this, 'blockline_register_settings_menu'),99);
+    add_action('admin_menu', array($this, 'vayu_x_register_settings_menu'),99);
       
     }
 
-    function blockline_register_settings_menu() {
+    function vayu_x_register_settings_menu() {
 
-    $menu_title = sprintf( esc_html__( '%s Options', 'blockline' ), apply_filters( 'thsm_page_title', __( 'Vayu X', 'vayu-x' ) ) );
+    $menu_title = sprintf( esc_html__( '%s Options', 'vayu-x' ), apply_filters( 'thsm_page_title', __( 'Vayu X', 'vayu-x' ) ) );
 
-    add_theme_page(esc_html__('Blockline', 'blockline'), $menu_title, 'edit_theme_options', 'blockline_thunk_started', array($this, 'vayu_x_settings_page'));   
+    add_theme_page(esc_html__('Vayu X', 'vayu-x'), $menu_title, 'edit_theme_options', 'vayu_x__thunk_started', array($this, 'vayu_x_settings_page'));   
    
   }
    
@@ -37,14 +37,14 @@ class Vayu_theme_option{
 $get_plugin_status_nonce = wp_create_nonce('get_plugin_status_nonce');
 $install_and_activate_plugin_nonce = wp_create_nonce('install_and_activate_plugin_nonce');
 
-    if($hook_suffix == 'appearance_page_blockline_thunk_started') {
+    if($hook_suffix == 'appearance_page_vayu_x__thunk_started') {
 
-    wp_enqueue_style( 'blockline-settings-css', get_template_directory_uri() . '/theme-option/build/style-index.css', array(), '1.0.0', false );
+    wp_enqueue_style( 'vayu-x-settings-css', get_template_directory_uri() . '/theme-option/build/style-index.css', array(), '1.0.0', false );
 
-    wp_enqueue_script( 'blockline-settings-js', get_template_directory_uri() . '/theme-option/build/index.js', array( 'wp-element', 'wp-i18n' ), '1.0', true );
+    wp_enqueue_script( 'vayu-x-settings-js', get_template_directory_uri() . '/theme-option/build/index.js', array( 'wp-element', 'wp-i18n' ), '1.0', true );
 
     wp_localize_script(
-        'blockline-settings-js',
+        'vayu-x-settings-js',
         'wpapi',
         array(
           'homeUrl' => get_home_url(),
@@ -65,7 +65,7 @@ $install_and_activate_plugin_nonce = wp_create_nonce('install_and_activate_plugi
 
    function vayu_x_settings_page() {
     ?>
-        <div id="blockline-theme-setting-page" class="blockline-theme-setting-page">
+        <div id="vayu-x-theme-setting-page" class="vayu-x-theme-setting-page">
         </div>
     <?php
 
@@ -78,4 +78,5 @@ $obj = new Vayu_theme_option();
 //theme option panel
 require get_template_directory() . '/theme-option/plugin-data.php';
 
-require get_template_directory() . '/theme-option/api-function/custom-download.php';
+// Below line is to include rest api function created for cutom pligin to be add in the list
+// require get_template_directory() . '/theme-option/api-function/custom-download.php';

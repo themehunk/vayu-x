@@ -4,7 +4,7 @@
     "imgUrl": "https://ps.w.org/vayu-blocks/assets/icon-128x128.png",
     "link": "https://themehunk.com/vayu-blocks/",
     "init": "vayu-blocks",
-    "proInit":" "
+    "proInit":""
   },
   
   "lead-form-builder": {
@@ -39,7 +39,7 @@
   },
   "th-all-in-one-woo-cart": {
     "name": "Th All In One Woo Cart",
-    "imgUrl": "https://ps.w.org/th-all-in-one-woo-cart/assets/icon-128x128.png",
+    "imgUrl": "https://ps.w.org/th-all-in-one-woo-cart/assets/icon-128x128.gif",
     "link": "https://themehunk.com/th-product-compare/",
     "init": "th-all-in-one-woo-cart",
     "proInit":"th-all-in-one-woo-cart-pro/th-all-in-one-woo-cart-pro"

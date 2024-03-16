@@ -3,7 +3,7 @@ Contributors: themehunk
 Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
 Requires at least: 6.0
 Tested up to: 6.4.3
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -20,6 +20,12 @@ Demo: https://themehunk.com/vayu/
 
 
 == Changelog ==
+Version 1.0.9
+* Update: In panel demoImport tab is commented.
+* Update: Links Added.
+* Webpack Removed.
+* Code Filtered.
+* Prefix Modification.
 
 Version 1.0.8
 * Padding issue in full width template resolved.
