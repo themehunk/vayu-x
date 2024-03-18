@@ -286,5 +286,8 @@ max-width:100%;
     .content-box a{
       color: #4570e3;
     }
+    .wp-core-ui .content-box button{
+        margin-right: 9px;
+    }
 
 /*# sourceMappingURL=style-index.css.map*/
