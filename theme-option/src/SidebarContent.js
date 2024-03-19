@@ -68,7 +68,6 @@ const SidebarContent = () => {
     
 
     const handleInstallActivate = () => {
-        // Perform AJAX request to install and activate the plugin
         fetch(wpapi.ajaxurl, {
             method: 'POST',
             headers: {
@@ -79,23 +78,39 @@ const SidebarContent = () => {
                 plugin_slug: 'vayu-blocks'
             }),
         })
-        .then(response => response.json())
-        .then(data => { console.log('Response:', data);
-            // Check if the request was successful
-            if (data.success) { 
-                // alert('Plugin installed and activated successfully!');
-                // Reload the page to remove the admin notice
-                window.location.reload();
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok.');
+            }
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                return response.json(); // Parse JSON response
             } else {
-                // Error occurred during installation and activation
-                alert('Error: ' + data.data.message);
+                return response.text(); // Parse text response
+            }
+        })
+        .then(data => {
+            // Check if data is a string (text response)
+            if (typeof data === 'string') {
+                // If it's a text response, log it and reload the page
+                console.log('Text response:', data);
+                window.location.reload(); // Reload the page
+            } else {
+                // If it's a JSON response, check for success
+                if (data && data.success) { 
+                    window.location.reload(); // Reload the page on success
+                } else {
+                    // Show error message
+                    alert('Error: ' + (data ? data : 'Unknown error'));
+                }
             }
         })
         .catch(error => {
-            // Error occurred during AJAX request
-            console.error('Error:', error);
+            console.error('Fetch Error:', error); // Log fetch error
         });
     };
+    
+    
 
     return (
         <Fragment>
