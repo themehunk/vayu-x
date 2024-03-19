@@ -7,11 +7,11 @@ const WelcomeContent = () => {
         <Fragment>
             <div className="option-content-wrp">
                <div className="content-box-full">
-                <h3> {__( 'Welcome to Vayu X. Here is a short video to look over its features and uses. ', 'vayu-x' )}</h3>
+                {/* <h3> {__( 'Welcome to Vayu X. Here is a short video to look over its features and uses. ', 'vayu-x' )}</h3>
                 <video width="320" height="240" controls>
                 <source src={`${wpapi.vayuUri}/theme-option/assets/img/video2.mp4`} type="video/mp4" />
 
-                </video>
+                </video> */}
                 <p>{__( 'Create beautiful website using Vayu X Full Site Editing Theme. It allows you to customize your site, including individual blocks, as much as you’d like with different colors, typography, layouts, and more.', 'vayu-x' )}
                 
                 </p>

@@ -36,12 +36,12 @@ const TabContent = (props) => {
           { __( 'Demo Import', 'vayu-x' )}
         </button> */}
        
-        <button
+        {/* <button
           className={`tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`}
           onClick={() => handleTabClick('freevspro')}
         >
           { __( 'Free Vs Pro', 'vayu-x' )}
-        </button>
+        </button> */}
         <button
           className={`tab help ${activeTab === 'help' ? 'active' : ''}`}
           onClick={() => handleTabClick('help')}

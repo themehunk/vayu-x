@@ -604,9 +604,6 @@ const TabContent = props => {
     className: `tab recommended ${activeTab === 'recommended' ? 'active' : ''}`,
     onClick: () => handleTabClick('recommended')
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Recommended Plugin', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: `tab freevspro ${activeTab === 'freevspro' ? 'active' : ''}`,
-    onClick: () => handleTabClick('freevspro')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Free Vs Pro', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: `tab help ${activeTab === 'help' ? 'active' : ''}`,
     onClick: () => handleTabClick('help')
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Help', 'vayu-x'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -669,14 +666,7 @@ const WelcomeContent = () => {
     className: "option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box-full"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, " ", (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Welcome to Vayu X. Here is a short video to look over its features and uses. ', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
-    width: "320",
-    height: "240",
-    controls: true
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("source", {
-    src: `${wpapi.vayuUri}/theme-option/assets/img/video2.mp4`,
-    type: "video/mp4"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create beautiful website using Vayu X Full Site Editing Theme. It allows you to customize your site, including individual blocks, as much as you’d like with different colors, typography, layouts, and more.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create beautiful website using Vayu X Full Site Editing Theme. It allows you to customize your site, including individual blocks, as much as you’d like with different colors, typography, layouts, and more.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: url_customize,
     className: "content-link button"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Start Customizing Vayu', 'vayu-x')))));
