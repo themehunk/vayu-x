@@ -1,9 +1,12 @@
 import {Fragment, useState, useEffect} from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
+import { FaSpinner } from 'react-icons/fa';
 
 const SidebarContent = () => {
     const [buttonText, setButtonText] = useState('Install');
     const [buttonEnable, setbuttonEnable] = useState(false);
+    const [isLoading, setLoading] = useState(false);
+
 
     useEffect(() => {
         // Wait for ajaxurl to be defined
@@ -68,6 +71,7 @@ const SidebarContent = () => {
     
 
     const handleInstallActivate = () => {
+        setLoading(true); // Set loading state to true
         fetch(wpapi.ajaxurl, {
             method: 'POST',
             headers: {
@@ -94,11 +98,17 @@ const SidebarContent = () => {
             if (typeof data === 'string') {
                 // If it's a text response, log it and reload the page
                 console.log('Text response:', data);
-                window.location.reload(); // Reload the page
+                setbuttonEnable(true);
+                setButtonText('Activated');
+                setLoading(false); // Set loading state to true
+                // window.location.reload(); // Reload the page
             } else {
                 // If it's a JSON response, check for success
                 if (data && data.success) { 
-                    window.location.reload(); // Reload the page on success
+                    setbuttonEnable(true);
+                    setButtonText('Activated');
+                    setLoading(false); // Set loading state to true
+                    // window.location.reload(); // Reload the page on success
                 } else {
                     // Show error message
                     alert('Error: ' + (data ? data : 'Unknown error'));
@@ -119,7 +129,8 @@ const SidebarContent = () => {
                 <h3> { __( 'Vayu Blocks', 'vayu-x' )}</h3>
                 <p>{__( 'Ignite your imagination with Vayu Blocks — An innovative tool for creative minds. The Vayu Blocks is an add-on plugin For Gutenberg Block Editor. Quickstart the Gutenberg editor with Powerful and elegant blocks to design stunning websites.', 'vayu-x' )}</p>
                 <button className="button button-primary" onClick={handleInstallActivate} disabled={buttonEnable}>
-                    <span>{buttonText}</span>
+                   
+                    {isLoading ? <><FaSpinner className="icon-spin loader" /></> : <span>{buttonText}</span>}
                 </button>
                 <a href="https://themehunk.com/vayu-blocks/" target="_blank" className="content-link button"> {__( 'Learn More', 'vayu-x' )}</a>
                </div>
