@@ -299,6 +299,17 @@ max-width:100%;
       .content-box .button-primary{
         min-width: 108px;
       }
-
+    @media screen and (max-width: 767px){
+        .blockline-theme-options-main{
+            flex-wrap: wrap;
+        }
+        .option-tab-content-wrap,
+        .option-sidebar-wrap{
+            width: 100%;
+        }
+        .option-sidebar-wrap{
+            margin: 1.3rem;
+        }
+}
 
 /*# sourceMappingURL=style-index.css.map*/
