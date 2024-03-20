@@ -691,7 +691,7 @@ const WelcomeContent = () => {
     className: "option-content-wrp"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "content-box-full"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Create beautiful website using Vayu X Full Site Editing Theme. It allows you to customize your site, including individual blocks, as much as you’d like with different colors, typography, layouts, and more.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Vayu X Theme: Tailored for beginners, it seamlessly integrates with WordPress’s block editor, simplifying website creation. Its intuitive interface guides users through adding text, images, and typography effortlessly with advance editor. Enhance your site with customizable blocks and responsive design, ensuring optimal viewing on all devices. Built-in customization options let you personalize colors, fonts, and layouts, while comprehensive support ensures assistance at every stage. Unleash your website-building potential with Vayu X.', 'vayu-x')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: url_customize,
     className: "content-link button"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Start Customizing Vayu', 'vayu-x')))));
