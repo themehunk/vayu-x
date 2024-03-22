@@ -272,10 +272,13 @@ max-width:100%;
         vertical-align: top;
     }
 
-    .wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover {
+    .wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover,
+    .wp-core-ui .content-box .button-primary:active,
+    .wp-core-ui .content-box .button-primary:focus {
         background: #4570e3;
         border-color: #4570e3;
         color: #ffffff;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 3px #4570e3;
     }
     .welcome-tab h2{
         line-height: 29px;
@@ -283,3 +286,29 @@ max-width:100%;
     .content-box a{
       color: #4570e3;
     }
+    .wp-core-ui .content-box button{
+        margin-right: 9px;
+    }
+    .content-box .loader {
+        -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+        margin-left: 12px;
+      }
+      .content-box .button-primary{
+        min-width: 108px;
+      }
+    @media screen and (max-width: 767px){
+        .blockline-theme-options-main{
+            flex-wrap: wrap;
+        }
+        .option-tab-content-wrap,
+        .option-sidebar-wrap{
+            width: 100%;
+        }
+        .option-sidebar-wrap{
+            margin: 1.3rem;
+        }
+}

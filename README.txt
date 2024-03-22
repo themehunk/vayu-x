@@ -26,6 +26,8 @@ Version 1.0.9
 * Webpack Removed.
 * Code Filtered.
 * Prefix Modification.
+* Panel modification. 
+* Install and Activate button working work.
 
 Version 1.0.8
 * Padding issue in full width template resolved.

@@ -1,11 +1,4 @@
 <?php
-// Custom function to check if a plugin is installed
-function vayu_x_is_plugin_installed($plugin_slug) {
-    // include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
-    $plugin_dir = WP_PLUGIN_DIR . '/' . $plugin_slug;
-    return is_dir($plugin_dir);
-}
-
 // Check if Vayu Blocks plugin is activated
 if ( !is_plugin_active('vayu-blocks/vayu-blocks.php' )) {
     vayu_x_activation_callback();
@@ -16,31 +9,6 @@ function vayu_x_activation_callback() {
     // Code to display admin notice/banner
     add_action( 'admin_notices', 'vayu_x_display_admin_notice' );
 }
-
-
-function vayu_install_custom_plugin( $plugin_slug ) {
-    require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
-    require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-
-    $plugin_info = plugins_api( 'plugin_information', array( 'slug' => $plugin_slug ) );
-
-    if ( is_wp_error( $plugin_info ) ) {
-        return $plugin_info->get_error_message();
-    }
-
-    $upgrader = new Plugin_Upgrader( new Plugin_Installer_Skin( array(
-        'api' => $plugin_info,
-    ) ) );
-
-    $result = $upgrader->install( $plugin_info->download_link );
-
-    if ( is_wp_error( $result ) ) {
-        return $result->get_error_message();
-    }
-
-    return  "success";
-}
-
 
 function vayu_x_display_admin_notice() {
     ?>
@@ -82,6 +50,35 @@ to create more flexible environment for creating amazing websites.', 'vayu-x' );
     <?php
 }
 
+// Custom function to check if a plugin is installed
+function vayu_x_is_plugin_installed($plugin_slug) {
+    // include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
+    $plugin_dir = WP_PLUGIN_DIR . '/' . $plugin_slug;
+    return is_dir($plugin_dir);
+}
+
+function vayu_install_custom_plugin( $plugin_slug ) {
+    require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+    require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+
+    $plugin_info = plugins_api( 'plugin_information', array( 'slug' => $plugin_slug ) );
+
+    if ( is_wp_error( $plugin_info ) ) {
+        return $plugin_info->get_error_message();
+    }
+
+    $upgrader = new Plugin_Upgrader( new Plugin_Installer_Skin( array(
+        'api' => $plugin_info,
+    ) ) );
+
+    $result = $upgrader->install( $plugin_info->download_link );
+
+    if ( is_wp_error( $result ) ) {
+        return $result->get_error_message();
+    }
+
+    return  "success";
+}
 
 
 // AJAX handler for installing and activating Vayu Blocks
@@ -113,7 +110,6 @@ function vayu_blocks_install_and_activate_callback() {
         // Install the plugin
 
         $status = vayu_install_custom_plugin($plugin_slug);
-    
 
         if (is_wp_error($status)) {
             wp_send_json_error(array('message' => $status->get_error_message()));
@@ -147,4 +143,33 @@ add_action( 'admin_enqueue_scripts', 'vayu_x_admin_script' );
 
 
 
+
+function vayu_check_plugin_status() {
+    $plugin_slug = isset($_POST['plugin_slug']) ? sanitize_text_field($_POST['plugin_slug']) : '';
+    $status = '';
+    // Check if the plugin slug is provided
+    if (empty($plugin_slug)) {
+        wp_send_json_error('Plugin slug is missing.');
+    }
+
+    // Check if the plugin is installed
+    if (vayu_x_is_plugin_installed($plugin_slug)) {
+        // Check if the plugin is activated
+        if (is_plugin_active($plugin_slug.'/'.$plugin_slug.'.php')) {
+            $status = 'activated';
+        } else {
+            $status = 'installed';
+        }
+    } else {
+        $status = 'notinstalled';
+    }
+
+    // error_log(print_r($plugin_slug, true));
+
+    // Send the status as a JSON object
+    wp_send_json_success(array('status' => $status));
+}
+
+add_action('wp_ajax_vayu_check_plugin_status', 'vayu_check_plugin_status');
+add_action('wp_ajax_nopriv_vayu_check_plugin_status', 'vayu_check_plugin_status');
 
