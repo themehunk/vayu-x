@@ -89,8 +89,7 @@ add_action('wp_ajax_nopriv_vayu_blocks_install_and_activate_callback', 'vayu_blo
 // Callback function to install and activate plugin
 function vayu_blocks_install_and_activate_callback() {
     // Check nonce for security
-   
-
+    check_ajax_referer('vayunonce', 'security');
     // Retrieve plugin slug from AJAX request
  $plugin_slug = isset($_POST['plugin_slug']) ? sanitize_text_field($_POST['plugin_slug']) : '';
 
@@ -136,7 +135,8 @@ function vayu_x_admin_script() {
 
     // Pass AJAX URL to the script
     wp_localize_script( 'vayu-x-notifyjs', 'theme_data', array(
-        'ajax_url' => admin_url('admin-ajax.php')
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'security' => wp_create_nonce( 'vayunonce' ), // Create nonce for security
     ) );
 }
 add_action( 'admin_enqueue_scripts', 'vayu_x_admin_script' );

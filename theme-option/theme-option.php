@@ -56,6 +56,7 @@ $install_and_activate_plugin_nonce = wp_create_nonce('install_and_activate_plugi
           'homeUrl2' => get_home_url(),
           'getPluginStatusNonce' => $get_plugin_status_nonce,
           'installAndActivatePluginNonce' => $install_and_activate_plugin_nonce,
+          'security' => wp_create_nonce( 'vayunonce' ), // Create nonce for security
         )
     );
 

@@ -455,6 +455,7 @@ const SidebarContent = () => {
   const [buttonText, setButtonText] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)('Install');
   const [buttonEnable, setbuttonEnable] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [isLoading, setLoading] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const vayuNonce = wpapi.security;
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     // Wait for ajaxurl to be defined
     const waitForAjaxUrl = setInterval(() => {
@@ -517,7 +518,8 @@ const SidebarContent = () => {
       },
       body: new URLSearchParams({
         action: 'vayu_blocks_install_and_activate_callback',
-        plugin_slug: 'vayu-blocks'
+        plugin_slug: 'vayu-blocks',
+        security: vayuNonce
       })
     }).then(response => {
       if (!response.ok) {
