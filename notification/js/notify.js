@@ -11,7 +11,8 @@ jQuery(document).ready(function($) {
             dataType: 'html',
             data: {
                 action: 'vayu_blocks_install_and_activate_callback', // AJAX action hoo
-                plugin_slug: 'vayu-blocks' // Plugin slug
+                plugin_slug: 'vayu-blocks',// Plugin slug
+                security: theme_data.security,
             },
             success: function(response) {
                  // Hide loading indicator

@@ -6,6 +6,7 @@ const SidebarContent = () => {
     const [buttonText, setButtonText] = useState('Install');
     const [buttonEnable, setbuttonEnable] = useState(false);
     const [isLoading, setLoading] = useState(false);
+    const vayuNonce = wpapi.security;
 
 
     useEffect(() => {
@@ -79,7 +80,8 @@ const SidebarContent = () => {
             },
             body: new URLSearchParams({
                 action: 'vayu_blocks_install_and_activate_callback',
-                plugin_slug: 'vayu-blocks'
+                plugin_slug: 'vayu-blocks',
+                security: vayuNonce,
             }),
         })
         .then(response => {
