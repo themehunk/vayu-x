@@ -23,11 +23,12 @@ Demo: https://themehunk.com/vayu/
 Version 1.0.9
 * Update: In panel demoImport tab is commented.
 * Update: Links Added.
-* Webpack Removed.
-* Code Filtered.
-* Prefix Modification.
-* Panel modification. 
-* Install and Activate button working work.
+* Update: Webpack Removed.
+* Update: Code Filtered.
+* Update: Prefix Modification.
+* Update: Panel modification. 
+* New: Install and Activate button working work.
+* Update: Template selection style modified.
 
 Version 1.0.8
 * Padding issue in full width template resolved.

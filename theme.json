@@ -3,21 +3,24 @@
 	"version": 2,
 	"customTemplates": [
     {
-			"name": "page-left-sidebar",
-			"title": "Left Sidebar Page",
-			"postTypes": [ "page,post" ]
-    },
-    {
-			"name": "page-right-sidebar",
-			"title": "Right Sidebar Page",
-			"postTypes": [ "page,post" ]
-    },
-    {
-			"name": "404",
-			"postTypes": [
-				"page"
-			],
-			"title": "404"
+			"name": "page-full-width-template",
+			"title": "page full width template",
+			"postTypes": ["page"]
+	},
+	{
+			"name": "page-template-blank",
+			"title": "page template blank",
+			"postTypes": [ "page" ]
+	},
+	{
+			"name": "page-with-header",
+			"title": "Page With Header",
+			"postTypes": [ "page" ]
+	},
+	{
+			"name": "page-with-left-sidebar",
+			"title": "page with left sidebar",
+			"postTypes": [ "page" ]
 	}
   ],
 	"templateParts": [
