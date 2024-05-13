@@ -2,7 +2,7 @@
 Contributors: themehunk
 Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
 Requires at least: 6.0
-Tested up to: 6.4.3
+Tested up to: 6.5.3
 Stable tag: 1.0.9
 Requires PHP: 5.6
 License: GPLv3 or later
