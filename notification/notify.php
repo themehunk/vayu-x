@@ -14,10 +14,8 @@ function vayu_x_display_admin_notice() {
     ?>
     <div class="notice notice-info vayu-wrapper-banner is-dismissible">
         <div class="left">
-        <h2 class="title"><?php esc_html_e( 'Ignite your imagination with Vayu Blocks — An innovative tool for creative minds.
-', 'vayu-x' ); ?></h2>
-        <p><?php esc_html_e( 'Vayu Blocks is completely user-friendly and improves the default WordPress block editor,
-to create more flexible environment for creating amazing websites.', 'vayu-x' ); ?></p>
+        <h2 class="title"><?php esc_html_e( 'Please Install & Activate Vayu Blocks', 'vayu-x' ); ?></h2>
+        <p><?php esc_html_e( 'Once the Vayu Blocks plugin is installed, you’ll be set to create amazing high-performance, visually appealing websites.', 'vayu-x' ); ?></p>
         
         <?php
             if (is_plugin_active('vayu-blocks/vayu-blocks.php')) {
