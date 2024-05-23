@@ -135,6 +135,7 @@ function vayu_x_admin_script() {
     wp_localize_script( 'vayu-x-notifyjs', 'theme_data', array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'security' => wp_create_nonce( 'vayunonce' ), // Create nonce for security
+        'redirectUrl' => admin_url('admin.php?page=vayu-blocks') // Generate dynamic URL
     ) );
 }
 add_action( 'admin_enqueue_scripts', 'vayu_x_admin_script' );
