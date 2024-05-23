@@ -29,6 +29,7 @@ Version 1.0.9
 * Update: Panel modification. 
 * New: Install and Activate button working work.
 * Update: Template selection style modified.
+* Update: Banner Notification text changed.
 
 Version 1.0.8
 * Padding issue in full width template resolved.
