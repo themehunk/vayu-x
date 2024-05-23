@@ -22,7 +22,8 @@ jQuery(document).ready(function($) {
                     // alert('Plugin installed and activated successfully!');
 
                     // Reload the page to remove the admin notice
-                    location.reload();
+                    // location.reload();
+                    window.location.href = theme_data.redirectUrl;
                     // $('.loader').hide();
                 } else {
                     // Error occurred during installation and activation
