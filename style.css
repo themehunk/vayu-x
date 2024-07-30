@@ -139,7 +139,7 @@ a:active {
 padding:5px 10px;
 margin-right:10px;
 background:var(--wp--preset--color--accent);
-color:var(--wp--preset--color--black);
+color:var(--wp--preset--color--white);
 border-radius:4px;
 font-size:var(--wp--preset--font-size--tiny);
 }
