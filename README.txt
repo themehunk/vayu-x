@@ -23,6 +23,7 @@ Demo: https://themehunk.com/vayu/
 
 Version 1.1.2
 * Update: Default post template structure modified.
+* New: New screenshot added.
 
 Version 1.1.1
 * Update: Default page template structure modified.
