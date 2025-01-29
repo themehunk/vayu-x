@@ -97,14 +97,6 @@ add_action( 'after_setup_theme', 'vayu_x_custom_menu' );
 // this is commented line
 // require get_template_directory() . '/inc/admin_menu/index.php';
 
-function vayu_x_enqueue_editor_scripts(){
-
-	wp_enqueue_style('vayu-x-editor-style', VAYU_X_URL . 'block-editor.css', array(), ''); 
-
-}
-
-add_action( 'enqueue_block_editor_assets','vayu_x_enqueue_editor_scripts' );
-
 //theme option panel
 require get_template_directory() . '/theme-option/theme-option.php';
 
