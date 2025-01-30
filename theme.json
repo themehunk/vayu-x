@@ -320,7 +320,11 @@
 			"core/button": {
 		        "border": {
 		          "radius": "4px"
-		        }
+		        },
+				"color": {
+					"text": "#ffffff",
+					"background": "var(--wp--preset--color--accent)"
+				}
 		   }
 		},
 		"color": {
