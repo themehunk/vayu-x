@@ -1,4 +1,12 @@
 == Changelog ==
+
+Version 1.1.6
+* Update: SHop Page product style improved.
+* Update: When Import Header layout is not importing properly
+* Update: Product Search page is issue resolved.
+* Update: Shop Page compare button is not looking fine issue resolved.
+* Update: In shop page while adding product in cart the view cart link is not looking fine.
+
 Version 1.1.5
 * New: Changelog.txt added.
 * Update: "$schema": "https://schemas.wp.org/wp/6.7/theme.json" updated.

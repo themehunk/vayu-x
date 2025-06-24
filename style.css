@@ -4,9 +4,9 @@ Theme URI: https://themehunk.com/vayu/
 Author: ThemeHunk
 Author URI: https://www.themehunk.com
 Description: Vayu X is a Fast & lightweight Block Based Full Site Editing WordPress Theme. With FSE, users can create custom templates for different pages or sections of the site, as well as use widgets and other design elements to control the appearance and layout of the site. We believe it will revolutionize the way you create and customize your WordPress site. With Vayu X you’ll have access to a range of pre-designed templates and custom block patterns, making it easy to create stunning pages and posts without any coding knowledge.
-Version: 1.1.5
+Version: 1.1.6
 Requires at least: 6.7
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.7
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -210,6 +210,17 @@ header.thunk-transparent-header {
 }
 
 /*WooCommerce Style Css*/
+.theme-vayu-x .wp-block-button.wc-block-components-product-button .wc-block-components-product-button__button{
+	margin-bottom: 0!important;
+}
+.theme-vayu-x .wp-block-button.wc-block-components-product-button{
+	flex-direction: row;
+}
+.theme-vayu-x .added_to_cart.wc_forward{
+	margin: 0;
+	padding: 0;
+	text-decoration: underline;
+}
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,
 .woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover,
@@ -382,9 +393,17 @@ font-weight: normal;
 	padding: 12px;
 }
 .th-product-compare-btn-wrap a{
+	position: relative;
 	border-radius: 4px;
-	padding: 10px!important;
+	padding: 4px 9px!important;
 	font-size: 11px!important;
+	margin: 0;
+	font-size: 0!important;
+}
+.th-product-compare-btn-wrap a:before{
+	content: "\21C4";
+	font-size: 16px;
+	line-height: 16px;
 }
 .woocommerce-shop .th-product-compare-btn-wrap{
 	text-align: center;
