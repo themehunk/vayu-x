@@ -208,8 +208,36 @@ header.thunk-transparent-header {
 .wp-block-column .leadform-show-form .lf-field label{
 	display: none;
 }
-
+/*Footer Style Css*/
+.wp-site-blocks footer{
+	margin-top: 29px;
+}
 /*WooCommerce Style Css*/
+.wp-block-woocommerce-product-meta{
+	clear: both;
+}
+
+.wp-block-woocommerce-add-to-cart-form {
+	display: flex;
+	align-items: flex-end;
+}
+.woocommerce .wc-block-product-template li,
+.woocommerce .up-sells .products li,
+.wc-block-product-template li.wc-block-product,
+.woocommerce ul.products li.product, 
+.woocommerce-page ul.products li.product
+{
+    background-color:#f7f7f7;
+    padding:10px;
+}
+.up-sells .products li a,
+.up-sells .products .add_to_cart_button
+{
+    text-align: center;
+}
+.woocommerce-product-gallery__image{
+	background-color:#f7f7f7;
+}
 .theme-vayu-x .wp-block-button.wc-block-components-product-button .wc-block-components-product-button__button{
 	margin-bottom: 0!important;
 }
@@ -280,6 +308,9 @@ header.thunk-transparent-header {
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
 	background-color: var(--wp--preset--color--accent);
 	color: var(--wp--preset--color--btnclr);
+}
+.theme-vayu-x.woocommerce .woocommerce-ordering select{
+	padding: 5px 9px;
 }
 /* Blog Page Style CSS */
 .wp-block-post-template{
@@ -394,18 +425,18 @@ font-weight: normal;
 }
 .th-product-compare-btn-wrap a{
 	position: relative;
-	border-radius: 4px;
-	padding: 4px 9px!important;
-	font-size: 11px!important;
+	font-size: 18px!important;
 	margin: 0;
-	font-size: 0!important;
+	background: transparent!important;
+	color: inherit!important
 }
 .th-product-compare-btn-wrap a:before{
 	content: "\21C4";
-	font-size: 16px;
-	line-height: 16px;
 }
-.woocommerce-shop .th-product-compare-btn-wrap{
+.single-product div.product .variations_button .th-product-compare-btn-wrap a{
+	padding-top: 1em;
+}
+.woocommerce .th-product-compare-btn-wrap{
 	text-align: center;
 }
 .th-product-compare-btn-wrap a:hover,
@@ -488,7 +519,9 @@ box-shadow: none;
 	background-color: transparent;
 	color: inherit;
 }
-
+.single-product .comment-form{
+	max-width: 554px;
+}
 .woocommerce-page table.shop_table{
 	width: 100%;
 }

@@ -70,7 +70,7 @@ if ( ! function_exists( 'vayu_x_styles' ) ) :
 		// Enqueue theme stylesheet.
 		wp_enqueue_style( 'vayu-style' );
 		
-
+		wp_enqueue_style( 'vayu-woocommerce-style', VAYU_X_URL . 'assets/css/vayu-woocommerce-style.css','',VAYU_X_VERSION);	
 	}
 
 endif;
