@@ -2490,10 +2490,10 @@ font-weight: normal;
     background: transparent!important;
     color: inherit!important;
 }
-.th-product-compare-btn-wrap a:before{
+/*.th-product-compare-btn-wrap a:before{
     content: "\21C4";
     margin-right: 5px;
-}
+}*/
 .single-product div.product .variations_button .th-product-compare-btn-wrap a{
     padding-top: 1em;
 }
