@@ -1,4 +1,6 @@
 == Changelog ==
+Version 1.1.7
+* Fix: Theme Option error issue resolved.
 
 Version 1.1.6
 * Update: SHop Page product style improved.
