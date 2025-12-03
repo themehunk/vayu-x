@@ -1,6 +1,7 @@
 import {Fragment} from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
+
 const OptionHeader = () => {
     return (
         <Fragment>
@@ -18,7 +19,7 @@ const OptionHeader = () => {
            <div className="th-option-top-hdr">
               <div className="th-col2">
                     <div className="th-option-heading">
-                       <h2>{sprintf(__( 'Welcome To %s Theme', 'vayu-x' ), wpapi.themeName)}</h2>
+                      <h2>{__( `Welcome To ${wpapi.themeName} Theme`, 'vayu-x' )}</h2>
                        <p>{wpapi.themeName} {__( 'Multipurpose WordPress Full Site Editing Theme', 'vayu-x' )}</p>
                     </div>
                     <div className="th-option-detail">

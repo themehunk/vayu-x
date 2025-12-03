@@ -41,7 +41,8 @@ function vayu_x_display_admin_notice() {
     </div>
 
         <div class="right">
-            <img src="<?php echo get_template_directory_uri(). '/notification/banner.png' ?>" />
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/notification/banner.png' ); ?>" alt="banner" />
+
         </div>
         
     </div>
