@@ -32,12 +32,12 @@ return array(
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} -->
-<p style="font-style:normal;font-weight:400">SignIn</p>
+<p style="font-style:normal;font-weight:400"><a href="#">SignIn</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"accent","className":"is-style-fill","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"border":{"radius":"4px"}}} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-accent-background-color has-background wp-element-button" style="border-radius:4px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">SignUp</a></div>
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-accent-background-color has-background wp-element-button" href="#" style="border-radius:4px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">SignUp</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

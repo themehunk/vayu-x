@@ -3,7 +3,7 @@ Contributors: themehunk
 Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
 Requires PHP: 5.7
 Tested up to: 6.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,6 +26,12 @@ License for images:
 == Poppins Font ==
 License: SIL Open Font License (OFL) 1.1
 License URL: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+== Inter Font ==
+License: SIL OPEN FONT LICENSE Version 1.1 
+License URL: https://openfontlicense.org/open-font-license-official-text/
+https://fonts.google.com/specimen/Inter/license
+
 
 
 == Theme License & Copyright ==

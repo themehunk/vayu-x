@@ -37,7 +37,7 @@ if ( ! function_exists( 'vayu_x_support' ) ) :
 		add_theme_support( 'experimental-link-color' );
 
 		//define
-		define( 'VAYU_X_VERSION', '1.0.0' );
+		define( 'VAYU_X_VERSION', '1.0.1' );
 	    define( 'VAYU_X_DEBUG', defined( 'WP_DEBUG' ) && WP_DEBUG === true );
 	    define( 'VAYU_X_DIR', trailingslashit( get_template_directory() ) );
 	    define( 'VAYU_X_URL', trailingslashit( get_template_directory_uri() ) );

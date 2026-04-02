@@ -84,7 +84,7 @@ return array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"sec-color"} -->
-<p class="has-sec-color-color has-text-color">Wheeling, West Virginia, 26003 Contact : 304-559-3023 E-mail : shopnow@store.com contact@ama.com</p>
+<p class="has-sec-color-color has-text-color">Wheeling, West Virginia, 26003 Contact : 304-559-3023 </p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
