@@ -29,23 +29,23 @@ return array(
 
 <!-- wp:list {"textColor":"sec-color"} -->
 <ul class="has-sec-color-color has-text-color"><!-- wp:list-item -->
-<li>Multiple Branches</li>
+<li><a href="#">Multiple Branches</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Take Franchise</li>
+<li><a href="#">Take Franchise</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Scheduled Offers</li>
+<li><a href="#">Scheduled Offers</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>More Links</li>
+<li><a href="#">More Links</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Terms</li>
+<li><a href="#">Terms</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->
@@ -57,23 +57,23 @@ return array(
 
 <!-- wp:list {"textColor":"sec-color"} -->
 <ul class="has-sec-color-color has-text-color"><!-- wp:list-item -->
-<li>Order</li>
+<li><a href="#">Order</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Download</li>
+<li><a href="#">Download</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Address</li>
+<li><a href="#">Address</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Logout</li>
+<li><a href="#">Logout</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>Register</li>
+<li><a href="#">Register</a></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
 <!-- /wp:column -->

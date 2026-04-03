@@ -22,6 +22,27 @@ Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom
  * https://github.com/WordPress/gutenberg/issues/35934
  */
 
+/*
+ * Skip to content link — keyboard accessibility
+ */
+.skip-link {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    z-index: 9999999;
+    background: var(--wp--preset--color--accent, #111);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 6px;
+    left: 6px;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
  :root {
 	--wp--custom--core-button--spacing--padding--left: 40px;
 	--wp--custom--core-button--spacing--padding--right: 8px;
@@ -66,9 +87,14 @@ a {
 	text-underline-offset: 0.25ch;
 }
 
-a:hover,
+a:hover {
+	text-decoration-style: dashed;
+}
+
 a:focus {
 	text-decoration-style: dashed;
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
 }
 
 a:active {
@@ -82,9 +108,14 @@ a:active {
   margin: 0; }
 
 
-.wp-block-navigation .wp-block-navigation-item a:hover,
+.wp-block-navigation .wp-block-navigation-item a:hover {
+	text-decoration-style: solid;
+}
+
 .wp-block-navigation .wp-block-navigation-item a:focus {
 	text-decoration-style: solid;
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
 }
 
 /*
@@ -169,6 +200,8 @@ a:not(
 ):focus {
 	text-decoration: underline;
 	text-decoration-style: dotted;
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
 }
 /*  Sticky Header */
 .thunk-sticky-header{
@@ -292,12 +325,12 @@ header.thunk-transparent-header {
 a:focus,
 button:focus,
 .wp-block-button__link:focus {
-    outline: 2px solid inherit; /* ya theme color */
-    outline-offset: 5px;
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
     text-decoration-style: solid;
 }
 :focus-visible {
-    outline: 2px solid inherit;
+    outline: 2px solid currentColor;
     outline-offset: 3px;
 }
 .wp-block-button__link:focus-visible {

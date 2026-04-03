@@ -386,11 +386,6 @@
 						"textDecoration": "none"
 					}
 				},
-				":focus": {
-					"typography": {
-						"textDecoration": "none"
-					}
-				},
 				":hover": {
 					"typography": {
 						"textDecoration": "none"
