@@ -1,10 +1,10 @@
 <?php
 // Add AJAX action for getting plugin status
-add_action('wp_ajax_get_plugin_status_callback', 'get_plugin_status_callback');
-add_action('wp_ajax_nopriv_get_plugin_status_callback', 'get_plugin_status_callback');
+add_action('wp_ajax_vayu_x_get_plugin_status_callback', 'vayu_x_get_plugin_status_callback');
+add_action('wp_ajax_nopriv_vayu_x_get_plugin_status_callback', 'vayu_x_get_plugin_status_callback');
 
 // Callback function to fetch plugin status
-function get_plugin_status_callback() {
+function vayu_x_get_plugin_status_callback() {
     // Check nonce for security
     check_ajax_referer('get_plugin_status_nonce', 'security');
 
@@ -28,10 +28,10 @@ function get_plugin_status_callback() {
 }
 
 // Add AJAX action for installing and activating plugin
-add_action('wp_ajax_install_and_activate_plugin_callback', 'install_and_activate_plugin_callback');
+add_action('wp_ajax_vayu_x_install_and_activate_plugin_callback', 'vayu_x_install_and_activate_plugin_callback');
 
 // Callback function to install and activate plugin
-function install_and_activate_plugin_callback() {
+function vayu_x_install_and_activate_plugin_callback() {
    
     // Check nonce for security
     check_ajax_referer('install_and_activate_plugin_nonce', 'security');
