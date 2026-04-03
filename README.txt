@@ -31,14 +31,3 @@ License URL: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 License: SIL OPEN FONT LICENSE Version 1.1 
 License URL: https://openfontlicense.org/open-font-license-official-text/
 https://fonts.google.com/specimen/Inter/license
-
-
-
-== Theme License & Copyright ==
-
-Vayu X is distributed under the terms of the GNU GPL
-Vayu X-Copyright 2023, themehunk.com
-License : GPLv3 or later
-License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
-
-
