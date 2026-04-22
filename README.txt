@@ -3,7 +3,7 @@ Contributors: themehunk
 Tags: grid-layout, one-column, wide-blocks, block-patterns, block-styles, custom-menu, editor-style, full-site-editing, full-width-template, style-variations, template-editing, translation-ready, e-commerce
 Requires PHP: 5.7
 Tested up to: 6.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -35,7 +35,7 @@ https://fonts.google.com/specimen/Inter/license
 
 == Theme License & Copyright ==
 
+Vayu X WordPress Theme, Copyright 2023 themehunk.com
 Vayu X is distributed under the terms of the GNU GPL
-Vayu X-Copyright 2023, themehunk.com
 License : GPLv3 or later
 License URL: https://www.gnu.org/licenses/gpl-3.0.en.html

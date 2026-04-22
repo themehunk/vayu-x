@@ -1,14 +1,42 @@
 <?php
 // Check if Vayu Blocks plugin is activated
-if ( !is_plugin_active('vayu-blocks/vayu-blocks.php' )) {
-    vayu_x_activation_callback();
+if ( is_plugin_active('vayu-blocks/vayu-blocks.php' )) {
+    return;
 }
 
-// Activation callback function
-function vayu_x_activation_callback() {
-    // Code to display admin notice/banner
-    add_action( 'admin_notices', 'vayu_x_display_admin_notice' );
+function vayu_x_set_notice_cookie() {
+    $expire_time = time() + (86400 * 7); // 7 days in seconds
+
+    if (!isset($_COOKIE['vayu_x_thms_time'])) {
+        // Set a cookie for 7 days
+        setcookie('vayu_x_thms_time', $expire_time, $expire_time, COOKIEPATH, COOKIE_DOMAIN);
+    }
 }
+
+function vayu_x_clear_notice_cookie() {
+    // Clear the cookie when the theme is switched
+    if (isset($_COOKIE['vayu_x_thms_time'])) {
+        setcookie('vayu_x_thms_time', '', time() - 3600, COOKIEPATH, COOKIE_DOMAIN);
+    }
+}
+
+function vayu_x_unset_cookie() {
+    $visit_time = time();
+    if (isset($_COOKIE['vayu_x_thms_time']) && $_COOKIE['vayu_x_thms_time'] < $visit_time) {
+        setcookie('vayu_x_thms_time', '', time() - 3600, COOKIEPATH, COOKIE_DOMAIN);
+    }
+}
+
+if (isset($_GET['notice-disable']) && $_GET['notice-disable'] == '1') {
+    add_action('admin_init', 'vayu_x_set_notice_cookie');
+}
+
+if (!isset($_COOKIE['vayu_x_thms_time'])) {
+    add_action('admin_notices', 'vayu_x_display_admin_notice');
+}
+
+// Always add the vayu_x_unset_cookie function to admin_init to ensure the cookie is unset if expired
+add_action('admin_init', 'vayu_x_unset_cookie');
 
 function vayu_x_display_admin_notice() {
     ?>
@@ -126,7 +154,7 @@ function vayu_blocks_install_and_activate_callback() {
 
 function vayu_x_admin_script() {
 
-	wp_enqueue_style('vayu-x-admin-css', get_template_directory_uri() . '/notification/css/admin.css', array(), '1.0.0', 'all');
+    wp_enqueue_style('vayu-x-admin-css', get_template_directory_uri() . '/notification/css/admin.css', array(), '1.0.0', 'all');
 
     // Enqueue the JavaScript file without jQuery dependency
     wp_enqueue_script( 'vayu-x-notifyjs', get_template_directory_uri() . '/notification/js/notify.js', array('jquery'), '1.0', true );
