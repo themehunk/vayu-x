@@ -1,4 +1,7 @@
 == Changelog ==
+Version 1.0.2
+* Fix: Issues resolved.
+
 Version 1.0.1
 * Fix: Theme Option error issue resolved.
 
