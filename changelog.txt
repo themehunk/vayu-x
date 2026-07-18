@@ -1,4 +1,8 @@
 == Changelog ==
+Version 1.0.3
+* Update: WordPress 7.0 compatibility - Requires PHP bumped to 7.4, Tested up to 7.0.
+* Update: theme.json schema updated to wp/7.0.
+
 Version 1.0.2
 * Fix: Issues resolved.
 
