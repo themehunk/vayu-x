@@ -6,10 +6,18 @@
     "init": "vayu-blocks",
     "proInit":""
   },
+
+  "th-store-one": {
+    "name": "Vayu Blocks",
+    "imgUrl": "https://ps.w.org/th-store-one/assets/icon-128x128.png",
+    "link": "https://themehunk.com/storeone/",
+    "init": "th-store-one",
+    "proInit":"https://themehunk.com/storeone/"
+  },
   
   "lead-form-builder": {
     "name": "Lead Form Builder",
-    "imgUrl": "https://ps.w.org/lead-form-builder/assets/icon-128x128.png",
+    "imgUrl": "https://ps.w.org/lead-form-builder/assets/icon-128x128.gif",
     "link": "https://themehunk.com/lead-form-builder/",
     "init": "lead-form-builder",
     "proInit":"lead-form-builder-pro/lead-form-builder-pro"
