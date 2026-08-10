@@ -27,8 +27,8 @@ return array(
 <h2 class="wp-block-heading has-heading-color has-text-color has-content-heading-font-size">More Product</h2>
 <!-- /wp:heading -->
 
-<!-- wp:list {"textColor":"sec-color"} -->
-<ul class="has-sec-color-color has-text-color"><!-- wp:list-item -->
+<!-- wp:list {"style":{"typography":{"textDecoration":"none"}},"textColor":"sec-color"} -->
+<ul style="text-decoration:none" class="wp-block-list has-sec-color-color has-text-color"><!-- wp:list-item -->
 <li><a href="#">Multiple Branches</a></li>
 <!-- /wp:list-item -->
 
@@ -55,8 +55,8 @@ return array(
 <h3 class="wp-block-heading has-heading-color has-text-color has-content-heading-font-size">Key Links</h3>
 <!-- /wp:heading -->
 
-<!-- wp:list {"textColor":"sec-color"} -->
-<ul class="has-sec-color-color has-text-color"><!-- wp:list-item -->
+<!-- wp:list {"style":{"typography":{"textDecoration":"none"}},"textColor":"sec-color"} -->
+<ul style="text-decoration:none" class="wp-block-list has-sec-color-color has-text-color"><!-- wp:list-item -->
 <li><a href="#">Order</a></li>
 <!-- /wp:list-item -->
 
@@ -91,7 +91,7 @@ return array(
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","backgroundColor":"bg-prim","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group alignfull has-bg-prim-background-color has-background"><!-- wp:paragraph {"align":"center"} -->
+<div class="wp-block-group alignfull has-bg-prim-background-color has-background"><!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
 <p class="has-text-align-center">Copyright  : 2023 Design &amp; developed with Vayu X</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->',

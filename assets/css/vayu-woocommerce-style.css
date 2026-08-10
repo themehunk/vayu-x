@@ -58,13 +58,6 @@
     word-wrap: normal !important
 }
 
-
-@media screen and (max-height: 320px) {
-    .sf-input-focused .woocommerce-store-notice {
-        display:none
-    }
-}
-
 table.shop_table_responsive thead {
     display: none
 }
@@ -203,7 +196,6 @@ ul.products li.product .button,ul.products .wc-block-grid__product .button,.wc-b
 
 .single-product div.product {
     position: relative;
-    overflow: hidden
 }
 
 .single-product div.product::before,.single-product div.product::after {
@@ -464,10 +456,8 @@ ul.products li.product .button,ul.products .wc-block-grid__product .button,.wc-b
     margin-right: .6180469716em
 }
 
-.single-product div.product .product_meta {
-    font-size: .875em;
+.single-product div.product .wp-block-post-terms {
     padding-top: 1em;
-    border-top: 1px solid rgba(0,0,0,.05)
 }
 
 .single-product div.product .product_meta .sku_wrapper,.single-product div.product .product_meta .posted_in,.single-product div.product .product_meta .tagged_as {
@@ -642,10 +632,6 @@ a.reset_variations {
     font-size: .875em
 }
 
-.woocommerce-breadcrumb a {
-    text-decoration: underline
-}
-
 .woocommerce-breadcrumb a:hover {
     text-decoration: none
 }
@@ -760,18 +746,6 @@ a.reset_variations {
 
 .widget_price_filter .price_slider_amount .button {
     float: left
-}
-
-@media(min-width: 768px)and (max-width: 1024px) {
-    .widget_price_filter .price_slider_amount {
-        text-align:left
-    }
-
-    .widget_price_filter .price_slider_amount .button {
-        display: block;
-        float: none;
-        width: 100%
-    }
 }
 
 .widget_price_filter .ui-slider {
@@ -1440,16 +1414,6 @@ ul.order_details li strong {
     float: left
 }
 
-.star-rating span {
-    overflow: hidden;
-    float: left;
-    top: 0;
-    left: 0;
-    position: absolute;
-    padding-top: 1.5em;
-    color: #2c2d33
-}
-
 p.stars {
     display: inline-block;
     margin: 0
@@ -1691,7 +1655,23 @@ dl.variation dd {
 }
 
 
+@media(min-width: 768px)and (max-width: 1024px) {
+    .widget_price_filter .price_slider_amount {
+        text-align:left
+    }
 
+    .widget_price_filter .price_slider_amount .button {
+        display: block;
+        float: none;
+        width: 100%
+    }
+}
+
+@media screen and (max-height: 320px) {
+    .sf-input-focused .woocommerce-store-notice {
+        display:none
+    }
+}
 
 @media(min-width: 768px) {
     .demo_store {
@@ -2377,7 +2357,7 @@ dl.variation dd {
 .woocommerce span.onsale{
     min-height: initial;
     min-width: initial;
-    padding: 5px 12px;
+    padding: 2px 9px;
     border-radius: 4px;
     line-height: normal;
     font-weight: 500;
@@ -2494,9 +2474,6 @@ font-weight: normal;
     content: "\21C4";
     margin-right: 5px;
 }*/
-.single-product div.product .variations_button .th-product-compare-btn-wrap a{
-    padding-top: 1em;
-}
 .woocommerce .th-product-compare-btn-wrap{
     text-align: center;
 }
@@ -2514,6 +2491,16 @@ font-weight: normal;
 .wp-block-query-pagination{
     padding-bottom: 21px;
 }
+.wc-block-product .thw-add-to-wishlist-button-wrap{
+    margin-top: 18px;
+}
+.wp-theme-vayu-x .cart_fixed_1 .taiowc-cart-item,
+.wp-theme-vayu-x .cart_fixed_1 .taiowcp-cart-item{
+    padding: 0;
+}
+.wp-theme-vayu-x .thw-add-to-wishlist-button-wrap.th-wishlist-single{
+    margin-left: 0;
+}
 /********** Single Product Css Start ****************/
 .woocommerce div.product .woocommerce-tabs ul.tabs li{
     background: #f4f5f7;
@@ -2522,11 +2509,6 @@ font-weight: normal;
     font-weight: 500;
     padding: 0.3em 0;
     font-size: 16px;
-}
-.taxonomy-product_cat.wp-block-post-terms,
-.single-product .wc-block-components-product-sku.product_meta {
-    font-size: 14px;
-    line-height: 21px;
 }
 .single-product .woocommerce-Tabs-panel > h2,
 .single-product .woocommerce-Reviews h2{
@@ -2676,3 +2658,42 @@ box-shadow: none;
  * **     VAYU X THEME WOOCOMMERCE CSS END
  * **
  * **************************************************************************************************/
+
+.wp-block-woocommerce-add-to-cart-form .th-wishlist-single,
+ .wp-block-woocommerce-add-to-cart-form .thunk-compare,
+ .th-wishlist-single{
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    padding: 4px 9px;
+    height: 34px;
+    float: left;
+    margin-left: 9px;
+    max-width: fit-content;
+}
+ .single-product .wp-block-woocommerce-add-to-cart-form form{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .single-product div.product form.cart table{
+    width: 100%;
+ }
+
+ .single-product .wp-block-woocommerce-add-to-cart-form .variations_button, 
+ .single-product .wp-block-woocommerce-add-to-cart-form form.cart{
+    display: flex;
+ }
+
+ .single-product  .th-wishlist-single svg{
+    width: 18px;
+ }
+
+
+ /* CSS to be reviewed  */
+/* .woocommerce-breadcrumb a {
+    text-decoration: underline
+}
+.single-product div.product {
+    overflow: hidden
+}
+
+*/
