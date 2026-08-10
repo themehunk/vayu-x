@@ -353,7 +353,7 @@
           "letterSpacing": "0.25px"
 				},
 				"spacing": {
-          "blockGap": "var(--wp--preset--spacing--small)"
+          "blockGap": "18px"
         }
 			},
 			"core/post-terms": {

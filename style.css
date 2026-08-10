@@ -350,3 +350,10 @@ footer a{
     text-decoration: underline;
     text-decoration-style: solid; 
 }
+
+.th-product-item  .thw-add-to-wishlist-button-wrap .thw-add-to-wishlist-button:before,
+.th-product-item  .thw-add-to-wishlist-button-wrap .thw-add-to-wishlist-button:after,
+.th-product-item  .thunk-compare .th-product-compare-btn::after,
+.th-product-item  .thunk-compare .th-product-compare-btn::before{
+    display: none;
+}
