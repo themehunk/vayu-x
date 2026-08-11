@@ -235,8 +235,8 @@
           "size": "16px",
           "slug": "small",
           "fluid": {
-            "min": "14px",
-            "max": "16px"
+            "min": "15px",
+            "max": "18px"
           }
         },
 				{
@@ -256,7 +256,7 @@
 				},
 				{
 					"name": "Upper Heading",
-					"size": "18px",
+					"size": "21px",
 					"slug": "upper-heading"
 				},
 				{
@@ -485,7 +485,7 @@
 				"color": {
           		"text": "var(--wp--preset--color--prim-color)"
         },
-        		"typography": {
+        "typography": {
           		"textDecoration": "none"
         }
 				
@@ -493,8 +493,8 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--poppins)",
-			"fontSize": "var(--wp--preset--font-sizex--small)",
-			"lineHeight": "normal"
+			"fontSize": "15px",
+			"lineHeight": "27px"
 		}
 	}
 }

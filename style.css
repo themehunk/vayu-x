@@ -203,6 +203,10 @@ a:not(
 	outline: 2px solid currentColor;
 	outline-offset: 3px;
 }
+.wc-block-product a:focus {
+    text-decoration: none;
+    outline: none;
+}
 /*  Sticky Header */
 .thunk-sticky-header{
     position: fixed;
@@ -329,10 +333,10 @@ button:focus,
     outline-offset: 3px;
     text-decoration-style: solid;
 }
-:focus-visible {
+/*:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 3px;
-}
+}*/
 .wp-block-button__link:focus-visible {
     background-color: var(--wp--preset--color--secondary);
     color: #fff;

@@ -12,6 +12,7 @@
     color: var(--wp--preset--color--btnclr);
     font-size: var(--wp--preset--font-size--small);
     border-radius: 4px;
+    line-height: normal;
 }
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
     background-color: var(--wp--preset--color--accent);
@@ -60,6 +61,7 @@
 }
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li{
     margin-right: 9px;
+    border: 0;
 }
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
     background-color: var(--wp--preset--color--accent);
@@ -177,9 +179,6 @@ font-weight: normal;
 .wp-theme-vayu-x .cart_fixed_1 .taiowcp-cart-item{
     padding: 0;
 }
-.wp-theme-vayu-x .thw-add-to-wishlist-button-wrap.th-wishlist-single{
-    margin-left: 0;
-}
 /********** Single Product Css Start ****************/
 .woocommerce div.product .woocommerce-tabs ul.tabs li{
     background: #f4f5f7;
@@ -242,7 +241,7 @@ box-shadow: none;
     color: inherit;
 }
 .single-product .comment-form{
-    max-width: 554px;
+    max-width: 54%;
 }
 .woocommerce-page table.shop_table{
     width: 100%;
@@ -384,3 +383,67 @@ box-shadow: none;
  .woocommerce.single-product div.product form.cart .variations{
     margin-bottom: 0;
  }
+
+ .wp-theme-vayu-x .wp-block-woocommerce-product-collection h2.wp-block-heading{
+    font-size: var(--wp--preset--font-size--upper-heading);
+    line-height: normal;
+}
+ .wp-theme-vayu-x  .th-theme-actions-wrapper{
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.wp-block-post-terms a{
+    text-decoration: none!important;
+}
+.comment-form label + input{
+    height: 29px;
+}
+ul.products li.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+ul.products li.product .add_to_cart_button {
+    display: block;
+    width: max-content;
+    margin: 0 auto 12px auto;
+ }
+ ul.products li.product .th-wishlist-single,
+ li.wc-block-product .th-wishlist-single{
+    border: 0;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+ }
+@media screen and (max-width: 767px){ 
+     .wp-theme-vayu-x  .th-theme-actions-wrapper .thw-to-add-text,
+     .wp-theme-vayu-x  .th-theme-actions-wrapper .thw-to-browse-text,
+     .wp-theme-vayu-x  .th-theme-actions-wrapper .text{
+        display: none;
+     }
+     form .thw-to-add-text,
+     form .thw-to-browse-text,
+     form .th-product-compare-btn .text{
+        display: none;
+     }
+      form .th-product-compare-btn i{
+        margin: 0!important;
+      }
+      form .thw-add-to-wishlist-button-wrap,
+      form .thunk-compare{
+        width: 45px !important;
+        padding: 0 !important;
+        align-items: center;
+        justify-content: center!important;
+        display: flex;
+        text-align: center;
+        max-width: initial!important;
+      }
+     .single-product .comment-form{
+        width: 100%;
+     }
+}
