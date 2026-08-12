@@ -31,7 +31,8 @@
     background-color: var(--wp--preset--color--accent);
     color: var(--wp--preset--color--btnclr);
 }
-.woocommerce span.onsale{
+.woocommerce span.onsale,
+.wc-block-product .wc-block-components-product-sale-badge{
     min-height: initial;
     min-width: initial;
     padding: 2px 9px;
@@ -418,6 +419,12 @@ ul.products li.product .add_to_cart_button {
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+ }
+ul.products li.product .th-theme-actions-wrapper .th-wishlist-single,
+li.wc-block-product .th-theme-actions-wrapper .th-wishlist-single{
+    max-width: max-content;
  }
 @media screen and (max-width: 767px){ 
      .wp-theme-vayu-x  .th-theme-actions-wrapper .thw-to-add-text,
