@@ -42,7 +42,9 @@ function vayu_x_install_and_activate_plugin_callback() {
     // Example plugin URL
 //  $plugin_url = 'https://example.com/plugins/' . $plugin_slug . '.zip'; // Change to the URL of your plugin
 
-    $plugin_url = 'https://anurag.wooblocks.com/anurag/vayu-blocks/'; // Change to the URL of your plugin
+    // $plugin_url = 'https://anurag.wooblocks.com/anurag/vayu-blocks/'; // Change to the URL of your plugin
+
+    $plugin_url = '';
 
     // Download the plugin ZIP file
     $temp_file = download_url($plugin_url);
