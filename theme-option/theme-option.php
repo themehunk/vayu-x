@@ -78,6 +78,3 @@ $obj = new Vayu_theme_option();
 
 //theme option panel
 require get_template_directory() . '/theme-option/plugin-data.php';
-
-// Below line is to include rest api function created for cutom plugin to be add in the list
-// require get_template_directory() . '/theme-option/api-function/custom-download.php';
