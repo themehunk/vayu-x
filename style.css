@@ -349,11 +349,11 @@ button:focus,
 footer a{
     text-decoration: none;
 }
-.wp-block-button__link:focus-visible,
+/*.wp-block-button__link:focus-visible,
 .wp-block-button__link:focus {
     text-decoration: underline;
     text-decoration-style: solid; 
-}
+}*/
 
 .th-product-item  .thw-add-to-wishlist-button-wrap .thw-add-to-wishlist-button:before,
 .th-product-item  .thw-add-to-wishlist-button-wrap .thw-add-to-wishlist-button:after,
