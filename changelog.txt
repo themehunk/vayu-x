@@ -1,4 +1,9 @@
 == Changelog ==
+Version 1.0.6
+* Update: Nonce issue resolved.
+* Update: Blog left sidebar pattern improved.
+* Update: Blog single page style updated.
+
 Version 1.0.5
 * Update: Style Improved.
 * Update: comments removed. 

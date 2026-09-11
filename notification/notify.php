@@ -1,9 +1,4 @@
 <?php
-// Check if Vayu Blocks plugin is activated
-if ( is_plugin_active('vayu-blocks/vayu-blocks.php' )) {
-    return;
-}
-
 function vayu_x_set_notice_cookie() {
     $expire_time = time() + (86400 * 7); // 7 days in seconds
 
@@ -39,6 +34,15 @@ if (!isset($_COOKIE['vayu_x_thms_time'])) {
 add_action('admin_init', 'vayu_x_unset_cookie');
 
 function vayu_x_display_admin_notice() {
+
+     if ( ! current_user_can( 'install_plugins' ) ) {
+        return;
+    }
+
+        // Check if Vayu Blocks plugin is activated
+    if ( is_plugin_active('vayu-blocks/vayu-blocks.php' )) {
+        return;
+    }
     ?>
     <div class="notice notice-info vayu-wrapper-banner is-dismissible">
         <div class="left">
@@ -110,49 +114,100 @@ function vayu_install_custom_plugin( $plugin_slug ) {
 
 // AJAX handler for installing and activating Vayu Blocks
 
-add_action('wp_ajax_vayu_blocks_install_and_activate_callback', 'vayu_blocks_install_and_activate_callback');
-add_action('wp_ajax_nopriv_vayu_blocks_install_and_activate_callback', 'vayu_blocks_install_and_activate_callback');
+add_action( 'wp_ajax_vayu_blocks_install_and_activate_callback', 'vayu_blocks_install_and_activate_callback' );
 
-// Callback function to install and activate plugin
+/**
+ * Install and activate plugin.
+ */
 function vayu_blocks_install_and_activate_callback() {
-    // Check nonce for security
-    check_ajax_referer('vayunonce', 'security');
-    // Retrieve plugin slug from AJAX request
- $plugin_slug = isset($_POST['plugin_slug']) ? sanitize_text_field($_POST['plugin_slug']) : '';
 
- // Get the full path to the main plugin file
- $plugin_file = WP_PLUGIN_DIR . '/' . $plugin_slug . '/' . $plugin_slug . '.php';
+    // Verify AJAX nonce.
+    check_ajax_referer( 'vayunonce', 'security' );
 
-    // Check if plugin is already installed but not activated
-    if (vayu_x_is_plugin_installed($plugin_slug) && !is_plugin_active($plugin_slug)) {
+    // Only users who can manage plugins are allowed.
+    if ( ! current_user_can( 'install_plugins' ) ) {
+        wp_send_json_error(
+            array(
+                'message' => __( 'You do not have permission to install or activate plugins.', 'vayu-x' ),
+            ),
+            403
+        );
+    }
 
-       
-        // Activate the plugin
-        $status = activate_plugin($plugin_file);
-        if (is_wp_error($status)) {
-            wp_send_json_error(array('message' => $status->get_error_message()));
+    // Retrieve and sanitize plugin slug.
+    $plugin_slug = isset( $_POST['plugin_slug'] )
+        ? sanitize_key( wp_unslash( $_POST['plugin_slug'] ) )
+        : '';
+
+    if ( empty( $plugin_slug ) ) {
+        wp_send_json_error(
+            array(
+                'message' => __( 'Invalid plugin slug.', 'vayu-x' ),
+            ),
+            400
+        );
+    }
+
+    // Get the full path to the main plugin file.
+    $plugin_file = WP_PLUGIN_DIR . '/' . $plugin_slug . '/' . $plugin_slug . '.php';
+
+    // Check if plugin is already installed but not activated.
+    if ( vayu_x_is_plugin_installed( $plugin_slug ) && ! is_plugin_active( $plugin_file ) ) {
+
+        // Activate the plugin.
+        $status = activate_plugin( $plugin_file );
+
+        if ( is_wp_error( $status ) ) {
+            wp_send_json_error(
+                array(
+                    'message' => $status->get_error_message(),
+                )
+            );
         }
     } else {
-        // Install the plugin
 
-        $status = vayu_install_custom_plugin($plugin_slug);
+        // Install the plugin.
+        $status = vayu_install_custom_plugin( $plugin_slug );
 
-        if (is_wp_error($status)) {
-            wp_send_json_error(array('message' => $status->get_error_message()));
+        if ( is_wp_error( $status ) ) {
+            wp_send_json_error(
+                array(
+                    'message' => $status->get_error_message(),
+                )
+            );
         }
-        
-        // Activate the plugin
-        $status = activate_plugin($plugin_file);
-        if (is_wp_error($status)) {
-            wp_send_json_error(array('message' => $status->get_error_message()));
+
+        // Activate the plugin.
+        $status = activate_plugin( $plugin_file );
+
+        if ( is_wp_error( $status ) ) {
+            wp_send_json_error(
+                array(
+                    'message' => $status->get_error_message(),
+                )
+            );
         }
     }
 
-    // Return success response
-    wp_send_json_success(array('message' => 'Plugin installed and activated successfully.'));
+    // Return success response.
+    wp_send_json_success(
+        array(
+            'message' => __( 'Plugin installed and activated successfully.', 'vayu-x' ),
+        )
+    );
 }
 
 function vayu_x_admin_script() {
+
+     /*
+     * Capability check first.
+     *
+     * This also prevents the nonce from being generated for users
+     * who cannot install plugins.
+     */
+    if ( ! current_user_can( 'install_plugins' ) ) {
+        return;
+    }
 
     wp_enqueue_style('vayu-x-admin-css', get_template_directory_uri() . '/notification/css/admin.css', array(), '1.0.0', 'all');
 
@@ -172,32 +227,50 @@ add_action( 'admin_enqueue_scripts', 'vayu_x_admin_script' );
 
 
 
+/**
+ * AJAX handler for checking Vayu Blocks status.
+ */
 function vayu_check_plugin_status() {
-    $plugin_slug = isset($_POST['plugin_slug']) ? sanitize_text_field($_POST['plugin_slug']) : '';
-    $status = '';
-    // Check if the plugin slug is provided
-    if (empty($plugin_slug)) {
-        wp_send_json_error('Plugin slug is missing.');
+
+    // User must have permission to manage/install plugins.
+    if ( ! current_user_can( 'install_plugins' ) ) {
+        wp_send_json_error(
+            array(
+                'message' => __( 'You do not have permission to check plugin status.', 'vayu-x' ),
+            ),
+            403
+        );
     }
 
-    // Check if the plugin is installed
-    if (vayu_x_is_plugin_installed($plugin_slug)) {
-        // Check if the plugin is activated
-        if (is_plugin_active($plugin_slug.'/'.$plugin_slug.'.php')) {
+    // Verify nonce.
+    check_ajax_referer( 'vayunonce', 'security' );
+
+    // This endpoint is only for Vayu Blocks.
+    $plugin_file = 'vayu-blocks/vayu-blocks.php';
+    $plugin_path = WP_PLUGIN_DIR . '/' . $plugin_file;
+
+    // Check actual plugin file.
+    if ( file_exists( $plugin_path ) ) {
+
+        if ( is_plugin_active( $plugin_file ) ) {
             $status = 'activated';
         } else {
             $status = 'installed';
         }
+
     } else {
         $status = 'notinstalled';
     }
 
-    // error_log(print_r($plugin_slug, true));
-
-    // Send the status as a JSON object
-    wp_send_json_success(array('status' => $status));
+    wp_send_json_success(
+        array(
+            'status' => $status,
+        )
+    );
 }
 
-add_action('wp_ajax_vayu_check_plugin_status', 'vayu_check_plugin_status');
-add_action('wp_ajax_nopriv_vayu_check_plugin_status', 'vayu_check_plugin_status');
+add_action(
+    'wp_ajax_vayu_check_plugin_status',
+    'vayu_check_plugin_status'
+);
 

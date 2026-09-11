@@ -549,4 +549,7 @@ li.wc-block-product .th-theme-actions-wrapper .th-wishlist-single{
     .single-product.woocommerce div.product .woocommerce-tabs ul.tabs{
         display: flex;
     }
+    .vayu-x-with-sidebar{
+        order: 2;
+    }
 }
