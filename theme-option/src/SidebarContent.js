@@ -22,50 +22,54 @@ const SidebarContent = () => {
         return () => clearInterval(waitForAjaxUrl);
     }, []);
    
-    const fetchPluginStatus = () => {
-        fetch(wpapi.ajaxurl, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: new URLSearchParams({
-                action: 'vayu_check_plugin_status',
-                plugin_slug: 'vayu-blocks'
-            }),
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (!data || typeof data !== 'object') {
-                throw new Error('Invalid response data');
-            }
-        // Check if data object exists and has status property
-    if (data && data.data && data.data.status) {
-        const status = data.data.status;
-        // Example: Update button text based on plugin status
-        console.log(status);
-        if (status === 'installed') {
-            setButtonText('Activate');
-        } else if (status === 'activated') { 
-            setButtonText('Activated');
-            setbuttonEnable(true);
-        } else if (status === 'notinstalled') {
-            setButtonText('Install');
-        } else {
-            console.error('Unknown plugin status:', status);
+   const fetchPluginStatus = () => {
+    fetch(wpapi.ajaxurl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({
+            action: 'vayu_check_plugin_status',
+            security: vayuNonce,
+        }),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
         }
-    } else {
-        console.error('Invalid data structure:', data);
-    }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    };
+
+        return response.json();
+    })
+    .then(data => {
+
+        console.log('Vayu Blocks status response:', data);
+
+        if (
+            data &&
+            data.success &&
+            data.data &&
+            data.data.status
+        ) {
+            const status = data.data.status;
+
+            if (status === 'installed') {
+                setButtonText('Activate');
+                setbuttonEnable(false);
+            } else if (status === 'activated') {
+                setButtonText('Activated');
+                setbuttonEnable(true);
+            } else if (status === 'notinstalled') {
+                setButtonText('Install');
+                setbuttonEnable(false);
+            }
+        } else {
+            console.error('Invalid status response:', data);
+        }
+    })
+    .catch(error => {
+        console.error('Error checking Vayu Blocks status:', error);
+    });
+};
     
     
     
