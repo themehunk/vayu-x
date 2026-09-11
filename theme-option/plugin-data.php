@@ -71,7 +71,9 @@ add_action( 'rest_api_init', function () {
     register_rest_route( 'wp/v1', 'vayu', array(
         'methods' => 'GET',
         'callback' => 'vayu_theme_option_endpoint_callback',
-        'permission_callback' => '__return_true',
+        'permission_callback' => function () {
+            return current_user_can( 'edit_theme_options' );
+        },
     ) );
 } );
 
@@ -117,11 +119,20 @@ if ( ! current_user_can( 'administrator' ) ) {
 
 check_ajax_referer( 'ajaxnonce', 'nonce' );
 
-$init = $_POST["init"];
-$slug = $_POST["slug"];
-$instl = $_POST["instl"];
+$init  = isset( $_POST['init'] ) ? sanitize_text_field( wp_unslash( $_POST['init'] ) ) : '';
+$slug  = isset( $_POST['slug'] ) ? sanitize_key( wp_unslash( $_POST['slug'] ) ) : '';
+$instl = isset( $_POST['instl'] ) ? sanitize_key( wp_unslash( $_POST['instl'] ) ) : '';
 
-$plugin_init = (isset($init)) ? esc_attr($init) : '';
+$plugin_init = $init;
+
+if ( '' === $plugin_init ) {
+    wp_send_json_error(
+        array(
+            'success' => false,
+            'message' => __( 'Invalid plugin.', 'vayu-x' ),
+        )
+    );
+}
 
 
 if (! is_plugin_active($plugin_init) && $instl == 'install-now') {
@@ -228,7 +239,6 @@ die();
 }
 
 add_action('wp_ajax_vayu_install_plugin', 'vayu_install_plugin');
-add_action('wp_ajax_nopriv_vayu_install_plugin', 'vayu_install_plugin');
 
 include_once(ABSPATH . 'wp-admin/includes/plugin-install.php');
 include_once(ABSPATH . 'wp-admin/includes/class-wp-upgrader.php');
