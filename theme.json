@@ -271,7 +271,7 @@
 				},
 				{
 					"name": "Large",
-					"size": "clamp(28px,4.2vw,32px)",
+					"size": "clamp(21px,4.2vw,32px)",
 					"slug": "large"
 				},
 				{

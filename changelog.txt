@@ -2,6 +2,8 @@
 Version 1.0.5
 * Update: Style Improved.
 * Update: comments removed. 
+* Update: Theme option plugin tab not working isssue resolved.
+* Update: Responsive design improved.
 
 Version 1.0.4
 * Update: Style Improved.
