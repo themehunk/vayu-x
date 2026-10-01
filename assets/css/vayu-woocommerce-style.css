@@ -550,6 +550,6 @@ li.wc-block-product .th-theme-actions-wrapper .th-wishlist-single{
         display: flex;
     }
     .vayu-x-with-sidebar{
-        order: 2;
+        order: 2!important;
     }
 }
